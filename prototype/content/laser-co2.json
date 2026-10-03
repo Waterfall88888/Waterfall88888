@@ -1,0 +1,97 @@
+{
+  "slug": "laser-co2",
+  "leadPrefix": "co2",
+  "name": "Laser CO₂ Fracionado",
+  "title": "Laser CO₂ Fracionado em Portimão | Algarvestetic",
+  "description": "Laser CO₂ Fracionado para cicatrizes de acne, textura irregular, poros mais visíveis e linhas finas. Avaliação médica da pele antes do procedimento.",
+  "eyebrow": "Laser CO₂ Fracionado",
+  "h1": "Cicatrizes de acne, textura irregular, poros mais visíveis ou linhas finas?",
+  "sub": "O Laser CO₂ Fracionado cria microzonas controladas de tratamento, promovendo renovação da pele e remodelação do colagénio.",
+  "ctaLabel": "Avaliar a minha pele",
+  "microcopy": "Avaliação médica antes do procedimento.",
+  "imageNote": "médico a realizar o procedimento, equipamento CO₂ em plano profissional, ou textura da pele em grande plano (com consentimento).",
+  "indicationsIntro": "Pode ser considerado para melhorar:",
+  "indications": [
+    "Determinadas cicatrizes de acne",
+    "Textura irregular",
+    "Poros mais visíveis",
+    "Linhas finas",
+    "Determinadas outras cicatrizes"
+  ],
+  "questions": [
+    {
+      "id": "como-funciona",
+      "q": "Como funciona?",
+      "answer": [
+        { "p": "O laser trata pequenas áreas da pele de forma fracionada, mantendo tecido entre elas que participa na recuperação." },
+        { "p": "A remodelação continua depois do procedimento." }
+      ]
+    },
+    {
+      "id": "doi",
+      "q": "Dói?",
+      "faq": "O Laser CO₂ Fracionado dói?",
+      "answer": [
+        { "p": "Pode provocar calor, ardor ou picadas." },
+        { "p": "Conforme a intensidade e a zona, pode ser utilizada anestesia tópica, infiltrativa e/ou bloqueios anestésicos." }
+      ]
+    },
+    {
+      "id": "recuperacao",
+      "q": "Como é a recuperação?",
+      "faq": "Como é a recuperação do Laser CO₂ Fracionado?",
+      "answer": [
+        { "p": "Podem ocorrer:" },
+        { "list": ["vermelhidão", "edema", "ardor", "pequenas crostas", "descamação"] },
+        { "p": "Existe um período visível de recuperação, cuja duração depende da intensidade do tratamento." }
+      ]
+    },
+    {
+      "id": "resultado",
+      "q": "Quando vejo o resultado?",
+      "faq": "Quando vejo o resultado do Laser CO₂ Fracionado?",
+      "answer": [
+        { "p": "Primeiro ocorre a recuperação da pele. A remodelação desenvolve-se progressivamente durante as semanas e meses seguintes." }
+      ]
+    },
+    {
+      "id": "cicatrizes-desaparecem",
+      "q": "As cicatrizes desaparecem?",
+      "faq": "O Laser CO₂ faz desaparecer as cicatrizes de acne?",
+      "answer": [
+        { "short": "Não podemos prometer isso." },
+        { "p": "O objetivo é melhorar a textura, profundidade e aparência das cicatrizes." },
+        { "p": "Cicatrizes diferentes podem necessitar de tratamentos diferentes." }
+      ]
+    },
+    {
+      "id": "sol",
+      "q": "Posso apanhar sol?",
+      "faq": "Posso apanhar sol depois do Laser CO₂?",
+      "answer": [
+        { "p": "A fotoproteção é fundamental durante a recuperação. Exposição solar inadequada aumenta o risco de alterações da pigmentação." }
+      ]
+    },
+    {
+      "id": "o-que-deve-saber",
+      "q": "O que deve saber",
+      "answer": [
+        { "know": ["Existe downtime.", "O resultado é progressivo.", "Mais intensidade não significa automaticamente melhor resultado."] }
+      ]
+    },
+    {
+      "id": "riscos",
+      "q": "Existem riscos?",
+      "faq": "Existem riscos no Laser CO₂ Fracionado?",
+      "answer": [
+        { "p": "Podem ocorrer alterações da pigmentação, vermelhidão prolongada, infeção, alterações da textura ou cicatrização desfavorável." }
+      ]
+    }
+  ],
+  "finalCta": {
+    "title": "Será adequado para a minha pele?",
+    "text": "Primeiro identificamos a alteração e avaliamos o tipo de pele. Depois definimos se CO₂ é a opção adequada."
+  },
+  "formOptions": ["Cicatrizes de acne", "Textura irregular", "Poros visíveis", "Linhas finas", "Outras cicatrizes"],
+  "whatsappText": "Olá, gostaria de avaliar se o Laser CO₂ Fracionado é indicado para a minha pele."
+}
