@@ -1,5 +1,5 @@
 > ⚠️ **Історичний документ.** Актуальний текст сторінок — `prototype/content/*.json`,
-> правила й SEO-карта — `PLAN.md` §11–12. Тут зберігаються технічні вимоги v1.0.
+> правила й SEO-карта — `PLAN.md` §3–7. Тут зберігаються технічні вимоги v1.0.
 
 # ТЗ — Master Landing Page «Endolaser / Endolifting» · Algarvestetic
 
