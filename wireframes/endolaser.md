@@ -1,6 +1,6 @@
 # ТЗ — Master Landing Page «Endolaser / Endolifting» · Algarvestetic
 
-> **Статус: затверджено як еталон (v1.0).** За цією сторінкою будуються всі інші
+> **Статус: еталон v1.1 (коротка версія тексту).** За цією сторінкою будуються всі інші
 > сторінки процедур (одна система, один шаблон).
 > Візуальна реалізація: `prototype/endolaser.html`.
 
@@ -15,128 +15,73 @@
 
 ---
 
-## Екрани (зверху вниз)
+## Структура сторінки (v1.1 — коротка версія)
 
-### SCREEN 1 — HERO
-**H1:** Papada, pequenos depósitos de gordura ou pele mais flácida?
-**Sub:** Endolaser é um procedimento minimamente invasivo que pode ser utilizado,
-em casos selecionados, para tratar pequenos depósitos de gordura localizada e
-melhorar a flacidez e o contorno da zona tratada.
+Текст скорочено: кожен блок — одне питання пацієнта. Заголовки-питання
+збігаються з пошуковими запитами («endolaser dói», «endolaser emagrece»),
+тому вони ж розмічені як Schema.org FAQPage.
+
+### HERO
+**H1:** Papada, gordura localizada ou pele mais flácida?
+**Sub:** O Endolaser é um procedimento minimamente invasivo utilizado, em casos
+selecionados, para pequenos depósitos de gordura localizada e flacidez, ajudando a
+melhorar o contorno da zona tratada.
 **CTA:** `[ SABER SE É INDICADO PARA MIM ]` · `[ WHATSAPP ]`
 **Microcopy:** Avaliação médica antes do procedimento.
-**Візуал:** НЕ generic beauty model. Реальний пацієнт (зі згодою) / лікар під час
-процедури / професійний кадр fibre/обладнання / коректна анатомічна візуалізація.
-На мобільному зона/обличчя не перекриває CTA.
+**Візуал:** НЕ generic beauty model (лікар під час процедури / fibre / анатомічна візуалізація).
 
-### SCREEN 2 — ПАЦІЄНТ УПІЗНАЄ СЕБЕ
-**H2:** O que gostaria de melhorar? — 4 картки:
-- **PAPADA** — Pequena acumulação de gordura e/ou flacidez abaixo do queixo.
-- **CONTORNO FACIAL** — Perda de definição em determinadas zonas do rosto.
-- **GORDURA LOCALIZADA** — Pequenos depósitos de gordura em zonas selecionadas da face ou do corpo.
-- **FLACIDEZ** — Perda ligeira a moderada de firmeza dos tecidos em pacientes selecionados.
-Під картками: Nem todas estas alterações têm a mesma causa. A avaliação permite
-perceber se o Endolaser é realmente adequado ao seu caso. → `[ MARCAR AVALIAÇÃO ]`
+### Para que serve?
+Pode ser considerado para: papada · pequenos depósitos de gordura na face ou corpo ·
+perda de definição do contorno · flacidez ligeira a moderada.
 
-### SCREEN 3 — КЛЮЧОВА ЦІННІСТЬ
-**H2:** Gordura localizada e flacidez podem coexistir na mesma zona.
-É precisamente aqui que o Endolaser pode ser interessante em determinados pacientes.
-A fibra atua sob a pele e permite ao médico trabalhar diferentes planos dos tecidos,
-de acordo com o objetivo definido na avaliação. Pode ser direcionado para:
-pequenos depósitos de gordura localizada + flacidez e remodelação dos tecidos + melhoria do contorno.
-**Callout:** Endolaser não é um tratamento para emagrecer. Destina-se a situações
-selecionadas e não ao tratamento de grandes volumes de gordura.
+### Como funciona?
+Uma fibra ótica fina é introduzida sob a pele através de pequenos pontos de entrada.
+A energia laser produz um efeito térmico controlado, permitindo atuar sobre pequenos
+depósitos de gordura e promover remodelação dos tecidos.
 
-### SCREEN 4 — ЯК ПРАЦЮЄ
-**H2:** Como funciona? — схема з 4 етапів:
-1. Pequeno ponto de entrada → 2. Introdução de uma fibra ótica fina sob a pele →
-3. Aplicação controlada da energia laser nos tecidos selecionados →
-4. Recuperação e remodelação progressiva dos tecidos.
-Текст: A energia produz um efeito térmico controlado. Dependendo da profundidade,
-da anatomia da zona e do objetivo do tratamento, pode ser utilizada para atuar sobre
-pequenos depósitos de gordura e promover remodelação dos tecidos. Os parâmetros e a
-técnica são individualizados.
+### Dói?
+Pode ser desconfortável. É realizada anestesia local infiltrativa e/ou bloqueios
+anestésicos, conforme a zona. Pode sentir pressão, manipulação ou calor.
 
-### SCREEN 5 — БІЛЬ
-**H2:** Dói? Pode ser desconfortável, mas utilizamos anestesia local para reduzir
-significativamente a sensibilidade durante o procedimento. Podem ser utilizados:
-Anestesia infiltrativa e/ou Bloqueios anestésicos. Durante o tratamento pode sentir
-pressão, manipulação da zona, movimento da fibra ou alguma sensação de calor.
-Não prometemos uma experiência completamente indolor porque a sensibilidade varia.
+### Como é a recuperação?
+Podem ocorrer edema, pequenos hematomas, sensibilidade e endurecimento temporário.
+O regresso à rotina depende da área e extensão tratadas.
 
-### SCREEN 6 — ВІДНОВЛЕННЯ (timeline: горизонт. desktop / вертик. mobile)
-- **LOGO APÓS:** edema, sensibilidade e sensação de tensão.
-- **PRIMEIROS DIAS:** pequenos hematomas, desconforto ou endurecimento temporário.
-- **DIAS / SEMANAS SEGUINTES:** recupera progressivamente; duração varia.
-- **SEMANAS / MESES SEGUINTES:** continua a remodelação dos tecidos.
-Під timeline: O resultado não deve ser avaliado nos primeiros dias.
+### Quando vejo o resultado?
+O edema inicial pode alterar o contorno. Depois, a remodelação continua
+progressivamente durante as semanas e meses seguintes.
 
-### SCREEN 7 — ЧИ ЗМОЖУ ПРАЦЮВАТИ
-**H2:** Vou conseguir trabalhar? Muitos pacientes conseguem regressar relativamente
-cedo, mas depende da zona, extensão, edema, hematomas e tipo de trabalho. Não
-recomendamos marcar imediatamente antes de um evento importante sem discutir o
-período de recuperação.
+### Endolaser emagrece?
+**Não.** Destina-se a pequenos depósitos de gordura localizada. Não é um tratamento
+para perda de peso.
 
-### SCREEN 8 — РЕЗУЛЬТАТ
-**H2:** Quando vou começar a notar mudanças? Algumas alterações do contorno podem
-ser percetíveis mais cedo, mas a avaliação deve considerar a recuperação inicial e a
-remodelação progressiva. Depende de: Quantidade de gordura · Grau de flacidez ·
-Qualidade da pele · Área tratada · Idade e anatomia · Resposta individual.
-**Callout:** Mais energia não significa necessariamente melhor resultado.
+### Substitui cirurgia?
+**Nem sempre.** Excesso importante de pele, flacidez acentuada ou maior volume de
+gordura podem necessitar de outra abordagem.
 
-### SCREEN 9 — ЧОГО ENDOLASER НЕ РОБИТЬ
-- NÃO É UM TRATAMENTO PARA EMAGRECER.
-- NÃO TRATA TODOS OS VOLUMES DE GORDURA (grandes acumulações → outra abordagem).
-- NÃO SUBSTITUI TODAS AS CIRURGIAS (flacidez importante/excesso de pele → outra estratégia).
-- NÃO GARANTE O MESMO RESULTADO A TODAS AS PESSOAS.
+### O que deve saber
+01 Existe recuperação. · 02 O resultado é progressivo. · 03 Nem todos têm indicação
+para Endolaser.
 
-### SCREEN 10 — 3 COISAS ANTES DE DECIDIR
-- **01 — Existe recuperação** (edema, sensibilidade, hematomas, endurecimento temporário).
-- **02 — O resultado é progressivo** (não avaliar imediatamente depois).
-- **03 — Nem todos precisam de Endolaser** (às vezes outra técnica é mais adequada).
+### Existem riscos?
+Podem ocorrer infeção, irregularidades, alterações da sensibilidade, lesão térmica e
+outras complicações menos frequentes. Os riscos específicos são explicados antes do
+procedimento.
 
-### SCREEN 11 — RISCOS
-**H2:** É seguro? Procedimento médico minimamente invasivo, mas não isento de riscos.
-Esperados/possíveis: edema; hematomas; sensibilidade; desconforto; endurecimento
-temporário; alterações transitórias da sensibilidade. Menos frequentes: infeção,
-irregularidades, alterações dos tecidos ou lesão térmica. Discutidos caso a caso.
+### Обов'язкові блоки (немає в тексті власника, але лишаються в шаблоні)
+- **Quem realiza:** фото, ім'я, реальна кваліфікація, cédula. Без невизнаних титулів. `[ПОТРІБНІ ДАНІ]`
+- **Preço:** не публікувати до рішення адміністрації; потім `desde €___` лише якщо
+  ціна реально доступна, + що входить (ERS). `[ПОТРІБНІ ДАНІ]`
+- **International patients** (лише на PT-сторінці) → `[ PLAN YOUR VISIT ]`.
+- **Informação clínica e fontes:** 3–5 джерел лише під claims зі сторінки. `[ПОТРІБНІ ДАНІ]`
+- **Footer ERS:** Entidade · Morada · Inscrição ERS · Registo · Licença · Contactos ·
+  Privacidade · Cookies. Не вигадувати номери. `[ПОТРІБНІ ДАНІ]`
 
-### SCREEN 12 — FAQ (accordion)
-Dói? · Preciso de anestesia geral? · Ficam cortes? · Uma sessão chega? · Quando posso
-voltar ao ginásio? · Posso apanhar sol? · Quanto tempo dura o resultado? (sem número
-universal) · Posso fazer Endolaser se tiver muita pele em excesso?
-(Відповіді — див. `prototype/endolaser.html`; + Schema.org FAQPage.)
+### Фінальний CTA — Será adequado para mim?
+Se pretende melhorar papada, gordura localizada, flacidez ou definição do contorno,
+comece por uma avaliação. `[ SABER SE É INDICADO PARA MIM ]` (форма) · `[ WHATSAPP ]`
 
-### SCREEN 13 — QUEM REALIZA
-Foto real do médico · Nome completo · Qualificação profissional real · Cédula
-profissional · descrição curta лише з перевірюваними кваліфікаціями.
-**Não utilizar títulos não reconhecidos.** `[ПОТРІБНІ ДАНІ]`
-
-### SCREEN 14 — PREÇO
-**Não publicar** до рішення адміністрації: preço da avaliação · preço mínimo real ·
-zonas incluídas · o que está incluído · o que pode ter custo adicional.
-Потім, якщо доречно: `Endolaser — desde €___` + «O valor depende da área e extensão
-e é definido após avaliação.» **Жодного рекламного "desde", що не відповідає реально
-доступному лікуванню** (вимога ERS). `[ПОТРІБНІ ДАНІ]`
-
-### SCREEN 15 — CTA PRINCIPAL
-Ainda não sabe se Endolaser é adequado para si? Não precisa de decidir pela técnica
-antes da consulta. Comece por perceber o que está a causar a alteração do contorno e
-quais são as opções adequadas ao seu caso.
-`[ SABER SE É INDICADO PARA MIM ]` · `[ CONTACTAR POR WHATSAPP ]`
-
-### SCREEN 16 — INTERNATIONAL PATIENTS (блок лише на PT-сторінці)
-Visiting the Algarve? If you are travelling to the Algarve and would like to plan an
-assessment or treatment during your stay, visit our International Patients page.
-`[ PLAN YOUR VISIT ]` → веде в international pathway (строки, recovery, follow-up).
-
-### SCREEN 17 — INFORMAÇÃO CLÍNICA E FONTES
-3–5 актуальних якісних джерел, що підтримують лише наявні на сторінці claims.
-Джерела — не декор. Переглядати при зміні доказової бази. `[ПОТРІБНІ ДАНІ]`
-
-### SCREEN 18 — LEGAL / ERS (footer)
-Entidade · Morada · Inscrição ERS · Registo do estabelecimento · Licença de
-funcionamento (quando aplicável) · Contactos · Política de Privacidade · Cookies.
-**Не вигадувати відсутні номери.** `[ПОТРІБНІ ДАНІ]`
+> Попередня довга версія (18 екранів, v1.0) — в історії git.
 
 ---
 
@@ -156,8 +101,8 @@ funcionamento (quando aplicável) · Contactos · Política de Privacidade · Co
 
 ## Схема контенту (поля для решти сторінок процедур)
 Кожна наступна процедура = заповнення цих полів за цим самим шаблоном:
-`slug · hero{h1,sub,image,microcopy} · identify[cards] · value{text,callout} ·
-howItWorks[steps] · pain · recovery[timeline] · work · results{factors,callout} ·
-whatItDoesNotDo[] · threeThingsToKnow[] · risks[] · faq[] · doctor{name,qualification,cedula,photo} ·
-price{fixed,from,included[]} · ctaPrincipal · international? · clinicalInfo · sources[] ·
-legal{entidade,morada,ers,registo,licenca} · tracking{leadIdPrefix}`
+`slug · hero{h1,sub,image,microcopy} · indications[] ·
+questions[{q, shortAnswer?, answer}] (Como funciona, Dói, Recuperação, Resultado, Emagrece?, Substitui cirurgia?, Riscos) ·
+mustKnow[3] · doctor{name,qualification,cedula,photo} · price{fixed,from,included[]} ·
+finalCta{title,text} · international? · sources[] · legal{entidade,morada,ers,registo,licenca} ·
+tracking{leadIdPrefix}`
