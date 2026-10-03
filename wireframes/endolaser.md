@@ -1,328 +1,163 @@
-# Еталонний wireframe — сторінка процедури «Endolaser»
+# ТЗ — Master Landing Page «Endolaser / Endolifting» · Algarvestetic
 
-> Це **шаблон-система**: після затвердження всі інші сторінки процедур
-> будуються за цією самою структурою (ті самі блоки, та сама логіка).
-> Копія на сторінці — **португальською (PT)**; під кожним блоком — короткий
-> переклад/пояснення українською (_курсивом_).
->
-> Позначки:
-> `[ПОТРІБНІ ДАНІ]` — реальну інформацію має надати клініка (не вигадуємо:
-> імена лікарів, cédula, номери ERS, ціни, клінічні деталі).
-> `[ФОТО]` — місце під зображення.
-> `[CTA]` — кнопка заклику до дії.
+> **Статус: затверджено як еталон (v1.0).** За цією сторінкою будуються всі інші
+> сторінки процедур (одна система, один шаблон).
+> Візуальна реалізація: `prototype/endolaser.html`.
 
----
+## Мета сторінки
+Отримати від зацікавленого відвідувача одну з трьох дій:
+1. `Saber se é indicado para mim`
+2. `Marcar avaliação`
+3. `Contactar por WhatsApp`
 
-## Загальні принципи шаблону
-
-- **Mobile-first.** First screen короткий: вміщається на екран телефона без «простирадла» тексту.
-- **Один головний CTA** повторюється тричі: після hook (above the fold), у середині, у кінці.
-- **Основний CTA:** `Saber se é indicado para mim` (не «Marcar») — людина ще не вирішила.
-- **Вторинний CTA:** WhatsApp (швидкий контакт).
-- **Кожен медичний claim** має джерело у фінальному блоці «Informação clínica / Fontes».
-- **Липка панель** на мобільному внизу екрана: `[Avaliação]` + `[WhatsApp]`.
+Сторінка **не** змушує пацієнта вирішувати про процедуру онлайн — вона веде до
+**медичної оцінки**.
 
 ---
 
-## Структура зверху вниз
+## Екрани (зверху вниз)
 
-### 0. Хедер (глобальний, на всіх сторінках)
-- Ліворуч: лого клініки. Праворуч: меню + перемикач мови + кнопка `[Marcar avaliação]`.
-- Хлібні крихти: `Home › Especialidades › Endolaser` (+ Schema.org BreadcrumbList).
+### SCREEN 1 — HERO
+**H1:** Papada, pequenos depósitos de gordura ou pele mais flácida?
+**Sub:** Endolaser é um procedimento minimamente invasivo que pode ser utilizado,
+em casos selecionados, para tratar pequenos depósitos de gordura localizada e
+melhorar a flacidez e o contorno da zona tratada.
+**CTA:** `[ SABER SE É INDICADO PARA MIM ]` · `[ WHATSAPP ]`
+**Microcopy:** Avaliação médica antes do procedimento.
+**Візуал:** НЕ generic beauty model. Реальний пацієнт (зі згодою) / лікар під час
+процедури / професійний кадр fibre/обладнання / коректна анатомічна візуалізація.
+На мобільному зона/обличчя не перекриває CTA.
 
----
+### SCREEN 2 — ПАЦІЄНТ УПІЗНАЄ СЕБЕ
+**H2:** O que gostaria de melhorar? — 4 картки:
+- **PAPADA** — Pequena acumulação de gordura e/ou flacidez abaixo do queixo.
+- **CONTORNO FACIAL** — Perda de definição em determinadas zonas do rosto.
+- **GORDURA LOCALIZADA** — Pequenos depósitos de gordura em zonas selecionadas da face ou do corpo.
+- **FLACIDEZ** — Perda ligeira a moderada de firmeza dos tecidos em pacientes selecionados.
+Під картками: Nem todas estas alterações têm a mesma causa. A avaliação permite
+perceber se o Endolaser é realmente adequado ao seu caso. → `[ MARCAR AVALIAÇÃO ]`
 
-### 1. HOOK / First screen *(вище лінії згину — максимально коротко)*
+### SCREEN 3 — КЛЮЧОВА ЦІННІСТЬ
+**H2:** Gordura localizada e flacidez podem coexistir na mesma zona.
+É precisamente aqui que o Endolaser pode ser interessante em determinados pacientes.
+A fibra atua sob a pele e permite ao médico trabalhar diferentes planos dos tecidos,
+de acordo com o objetivo definido na avaliação. Pode ser direcionado para:
+pequenos depósitos de gordura localizada + flacidez e remodelação dos tecidos + melhoria do contorno.
+**Callout:** Endolaser não é um tratamento para emagrecer. Destina-se a situações
+selecionadas e não ao tratamento de grandes volumes de gordura.
 
-**Макет:** великий заголовок ліворуч, якісне фото праворуч (на мобільному — фото зверху, текст під ним). Жодного довгого тексту тут.
+### SCREEN 4 — ЯК ПРАЦЮЄ
+**H2:** Como funciona? — схема з 4 етапів:
+1. Pequeno ponto de entrada → 2. Introdução de uma fibra ótica fina sob a pele →
+3. Aplicação controlada da energia laser nos tecidos selecionados →
+4. Recuperação e remodelação progressiva dos tecidos.
+Текст: A energia produz um efeito térmico controlado. Dependendo da profundidade,
+da anatomia da zona e do objetivo do tratamento, pode ser utilizada para atuar sobre
+pequenos depósitos de gordura e promover remodelação dos tecidos. Os parâmetros e a
+técnica são individualizados.
 
-**Структура за твоїм принципом: проблема → можливе рішення → ключове відмінність → CTA**
+### SCREEN 5 — БІЛЬ
+**H2:** Dói? Pode ser desconfortável, mas utilizamos anestesia local para reduzir
+significativamente a sensibilidade durante o procedimento. Podem ser utilizados:
+Anestesia infiltrativa e/ou Bloqueios anestésicos. Durante o tratamento pode sentir
+pressão, manipulação da zona, movimento da fibra ou alguma sensação de calor.
+Não prometemos uma experiência completamente indolor porque a sensibilidade varia.
 
-> **H1:** Papada ou gordura localizada que não desaparece com dieta e exercício?
->
-> **Sub:** O Endolaser é uma abordagem minimamente invasiva que pode ser
-> utilizada, em casos selecionados, para gordura localizada e flacidez da pele —
-> com anestesia local e sem cirurgia aberta.
->
-> **[CTA] Saber se é indicado para mim**  ·  **[CTA-2] WhatsApp**
+### SCREEN 6 — ВІДНОВЛЕННЯ (timeline: горизонт. desktop / вертик. mobile)
+- **LOGO APÓS:** edema, sensibilidade e sensação de tensão.
+- **PRIMEIROS DIAS:** pequenos hematomas, desconforto ou endurecimento temporário.
+- **DIAS / SEMANAS SEGUINTES:** recupera progressivamente; duração varia.
+- **SEMANAS / MESES SEGUINTES:** continua a remodelação dos tecidos.
+Під timeline: O resultado não deve ser avaliado nos primeiros dias.
 
-_UA: «Підборіддя або локальний жир, що не йде від дієти й спорту? Endolaser —
-мінімально інвазивний метод для локального жиру та в'ялості шкіри в окремих
-випадках, під місцевою анестезією, без відкритої операції.»_
-_Кнопки: «Дізнатися, чи підходить мені» + WhatsApp._
+### SCREEN 7 — ЧИ ЗМОЖУ ПРАЦЮВАТИ
+**H2:** Vou conseguir trabalhar? Muitos pacientes conseguem regressar relativamente
+cedo, mas depende da zona, extensão, edema, hematomas e tipo de trabalho. Não
+recomendamos marcar imediatamente antes de um evento importante sem discutir o
+período de recuperação.
 
-> ⚠️ Жодних гарантій результату в H1. Формулювання «pode ser utilizada, em casos
-> selecionados» — свідомо обережне (вимога ERS: не вводити в оману).
+### SCREEN 8 — РЕЗУЛЬТАТ
+**H2:** Quando vou começar a notar mudanças? Algumas alterações do contorno podem
+ser percetíveis mais cedo, mas a avaliação deve considerar a recuperação inicial e a
+remodelação progressiva. Depende de: Quantidade de gordura · Grau de flacidez ·
+Qualidade da pele · Área tratada · Idade e anatomia · Resposta individual.
+**Callout:** Mais energia não significa necessariamente melhor resultado.
 
----
+### SCREEN 9 — ЧОГО ENDOLASER НЕ РОБИТЬ
+- NÃO É UM TRATAMENTO PARA EMAGRECER.
+- NÃO TRATA TODOS OS VOLUMES DE GORDURA (grandes acumulações → outra abordagem).
+- NÃO SUBSTITUI TODAS AS CIRURGIAS (flacidez importante/excesso de pele → outra estratégia).
+- NÃO GARANTE O MESMO RESULTADO A TODAS AS PESSOAS.
 
-### 2. O que o incomoda? *(що саме турбує пацієнта)*
+### SCREEN 10 — 3 COISAS ANTES DE DECIDIR
+- **01 — Existe recuperação** (edema, sensibilidade, hematomas, endurecimento temporário).
+- **02 — O resultado é progressivo** (não avaliar imediatamente depois).
+- **03 — Nem todos precisam de Endolaser** (às vezes outra técnica é mais adequada).
 
-**Макет:** короткий абзац + список-чипи типових скарг (клікабельні — для внутрішньої перелінковки на intent-сторінки, якщо є).
+### SCREEN 11 — RISCOS
+**H2:** É seguro? Procedimento médico minimamente invasivo, mas não isento de riscos.
+Esperados/possíveis: edema; hematomas; sensibilidade; desconforto; endurecimento
+temporário; alterações transitórias da sensibilidade. Menos frequentes: infeção,
+irregularidades, alterações dos tecidos ou lesão térmica. Discutidos caso a caso.
 
-> **H2:** Reconhece-se nalguma destas situações?
-> - Papada ou «queixo duplo»
-> - Gordura localizada no abdómen, flancos, braços
-> - Flacidez ligeira a moderada da pele
-> - Zonas que não respondem a dieta e exercício
+### SCREEN 12 — FAQ (accordion)
+Dói? · Preciso de anestesia geral? · Ficam cortes? · Uma sessão chega? · Quando posso
+voltar ao ginásio? · Posso apanhar sol? · Quanto tempo dura o resultado? (sem número
+universal) · Posso fazer Endolaser se tiver muita pele em excesso?
+(Відповіді — див. `prototype/endolaser.html`; + Schema.org FAQPage.)
 
-_UA: «Чи впізнаєте себе в цьому?» — список типових скарг. Чипи ведуть на
-intent-сторінки (напр. /papada/), якщо такі створимо._
+### SCREEN 13 — QUEM REALIZA
+Foto real do médico · Nome completo · Qualificação profissional real · Cédula
+profissional · descrição curta лише з перевірюваними кваліфікаціями.
+**Não utilizar títulos não reconhecidos.** `[ПОТРІБНІ ДАНІ]`
 
----
+### SCREEN 14 — PREÇO
+**Não publicar** до рішення адміністрації: preço da avaliação · preço mínimo real ·
+zonas incluídas · o que está incluído · o que pode ter custo adicional.
+Потім, якщо доречно: `Endolaser — desde €___` + «O valor depende da área e extensão
+e é definido após avaliação.» **Жодного рекламного "desde", що не відповідає реально
+доступному лікуванню** (вимога ERS). `[ПОТРІБНІ ДАНІ]`
 
-### 3. O que pode ser melhorado *(що потенційно можна покращити — обережно)*
+### SCREEN 15 — CTA PRINCIPAL
+Ainda não sabe se Endolaser é adequado para si? Não precisa de decidir pela técnica
+antes da consulta. Comece por perceber o que está a causar a alteração do contorno e
+quais são as opções adequadas ao seu caso.
+`[ SABER SE É INDICADO PARA MIM ]` · `[ CONTACTAR POR WHATSAPP ]`
 
-**Макет:** 1 короткий абзац. Без обіцянок «позбудетесь назавжди».
+### SCREEN 16 — INTERNATIONAL PATIENTS (блок лише на PT-сторінці)
+Visiting the Algarve? If you are travelling to the Algarve and would like to plan an
+assessment or treatment during your stay, visit our International Patients page.
+`[ PLAN YOUR VISIT ]` → веде в international pathway (строки, recovery, follow-up).
 
-> **Texto:** Em casos adequados, o Endolaser pode ajudar a reduzir gordura
-> localizada e a melhorar a firmeza da pele na zona tratada. A indicação e o
-> resultado esperado são sempre avaliados individualmente numa consulta médica.
+### SCREEN 17 — INFORMAÇÃO CLÍNICA E FONTES
+3–5 актуальних якісних джерел, що підтримують лише наявні на сторінці claims.
+Джерела — не декор. Переглядати при зміні доказової бази. `[ПОТРІБНІ ДАНІ]`
 
-_UA: «У відповідних випадках Endolaser може допомогти зменшити локальний жир і
-покращити пружність шкіри в зоні. Показання й очікуваний результат оцінюються
-індивідуально на консультації.»_
-
----
-
-### 4. [CTA] Saber se é indicado para mim *(міні-квіз — моя пропозиція)*
-
-**Макет:** помітна смуга/картка з CTA. По кліку — **міні-квіз на 2–3 питання**
-(зона, що турбує; чи були процедури раніше), після чого відкривається WhatsApp
-з **передзаповненим контекстом** → лід одразу кваліфікований.
-
-> **[CTA] Saber se é indicado para mim**
-
-_UA: Головний CTA. Квіз передає контекст у WhatsApp і чистить атрибуцію воронки.
-Кожен лід отримує унікальний `lead_id` для наскрізного вимірювання до «Receita»._
-
----
-
-### 5. Como funciona *(як працює — простими словами)*
-
-**Макет:** 3–4 кроки з іконками (горизонтально на десктопі, вертикально на мобільному).
-
-> **H2:** Como funciona o Endolaser
-> 1. **Avaliação médica** — indicação, zona e plano personalizado.
-> 2. **Anestesia local** na área a tratar.
-> 3. **Microfibra laser** introduzida através de micro-incisão; atua na gordura
->    e estimula o colagénio.
-> 4. **Regresso gradual** à rotina, com indicações pós-procedimento.
-
-_UA: 4 кроки: мед.оцінка → місцева анестезія → лазерна мікрофібра через
-мікропрокол (діє на жир + стимулює колаген) → поступове повернення до життя.
-Клінічні деталі підтверджує лікар клініки._ `[ПОТРІБНІ ДАНІ: уточнити протокол]`
-
----
-
-### 6. Porque escolher esta abordagem? *(переваги — лише перевірювані, без «ми найкращі»)*
-
-**Макет:** 3–4 картки з об'єктивними характеристиками.
-
-> - Avaliação médica antes do procedimento
-> - Anestesia local (sem necessidade de anestesia geral, quando aplicável)
-> - Técnica minimamente invasiva, com micro-incisões
-> - Acompanhamento pós-procedimento
-
-_UA: Тільки об'єктивне (вимога ERS): мед.оцінка до процедури, місцева анестезія,
-мінімальна інвазивність, супровід після. Жодного «найкращі/унікальні»._
-
----
-
-### 7. Dói? / Anestesia *(знімаємо головний страх)*
-
-> **H2:** Dói?
-> **Texto:** O procedimento é realizado sob anestesia local, pelo que o
-> desconforto durante a sessão é habitualmente reduzido. Pode existir
-> sensibilidade nos dias seguintes.
-
-_UA: Під місцевою анестезією, дискомфорт під час сеансу зазвичай незначний; у
-наступні дні можлива чутливість._
-
----
-
-### 8. Recuperação dia a dia *(відновлення по днях — дуже цінно для довіри)*
-
-**Макет:** таймлайн (День 1–2 / Дні 3–7 / Semanas seguintes).
-
-> - **Dias 1–2:** inchaço e possíveis hematomas; uso de malha de compressão se indicado.
-> - **Dias 3–7:** regresso gradual à rotina na maioria dos casos.
-> - **Semanas seguintes:** melhoria progressiva à medida que o colagénio responde.
-
-_UA: Дні 1–2: набряк/синці, компресійна білизна за показанням. Дні 3–7: поступове
-повернення. Далі: прогресивне покращення._ `[ПОТРІБНІ ДАНІ: реальні строки клініки]`
+### SCREEN 18 — LEGAL / ERS (footer)
+Entidade · Morada · Inscrição ERS · Registo do estabelecimento · Licença de
+funcionamento (quando aplicável) · Contactos · Política de Privacidade · Cookies.
+**Не вигадувати відсутні номери.** `[ПОТРІБНІ ДАНІ]`
 
 ---
 
-### 9. Quando esperar resultados *(коли чекати зміни)*
+## Технічні вимоги (обов'язкові)
+1. **Sticky CTA на мобільному:** внизу дві невеликі кнопки `Marcar | WhatsApp` (не величезна панель).
+2. **Швидкість:** без важкого 4K-відео в hero. Mobile page speed > красива заставка.
+3. **Коротка форма:** Nome + telefone/email + «O que gostaria de avaliar?». Без мед.історії в маркетинговій формі.
+4. **Після відправки — не просто "Obrigado":** екран «Pedido recebido. Entraremos em contacto para organizar a avaliação.» + фіксуємо conversion event.
+5. **International Patients форма** квалифікує турліда: Where do you live? · When will you be in the Algarve? · How long will you stay? · What would you like assessed?
 
-> **Texto:** Os resultados desenvolvem-se de forma progressiva ao longo de
-> semanas a meses, à medida que a pele reage e o colagénio é estimulado.
-
-_UA: Результат розвивається поступово, тижні–місяці._
-
----
-
-### 10. O que este tratamento NÃO faz *(чесне обмеження — різко піднімає довіру)*
-
-**Макет:** виразний блок з іконкою, іншим фоном.
-
-> **H2:** O que o Endolaser **não** é
-> - **Não** é um método de emagrecimento.
-> - **Não** substitui cirurgia em todos os casos.
-> - **Não** trata obesidade nem substitui dieta e exercício.
-
-_UA: НЕ схуднення, НЕ заміна операції в усіх випадках, НЕ лікування ожиріння._
+## Compliance-доповнення (Claude)
+- **RGPD cookie-банер + Google Consent Mode** перед будь-якими пікселями; conversion events (вимога №4) чекають на згоду.
+- **`lead_id`** на кожній формі/WhatsApp → наскрізна воронка до «Receita» (офлайн-стадії дописує персонал у CRM/таблицю; Meta CAPI + offline conversions upload).
+- **Фото «до/після»/пацієнтів** = медичні дані: лише з письмовою згодою.
 
 ---
 
-### 11. 3 coisas que deve saber antes de decidir *(знімає заперечення)*
-
-> 1. Existe um período de recuperação (inchaço/hematomas possíveis).
-> 2. O resultado é progressivo — não é imediato.
-> 3. A indicação depende da avaliação médica; nem todos os casos são adequados.
-
-_UA: 1) є відновлення; 2) результат поступовий; 3) показання — за мед.оцінкою,
-підходить не всім._
-
----
-
-### 12. Riscos *(ризики — коротко й відповідально)*
-
-> **Texto:** Como qualquer procedimento médico, pode haver riscos e efeitos
-> secundários (inchaço, hematomas, sensibilidade; raramente, outras
-> complicações). Todos os riscos são explicados na consulta.
-
-_UA: Як будь-яка мед.процедура — можливі набряк, синці, чутливість; рідко інші
-ускладнення. Усе пояснюють на консультації._ `[ПОТРІБНІ ДАНІ: перелік від лікаря]`
-
----
-
-### 13. FAQ *(розкривні питання + Schema.org FAQPage)*
-
-Приклади питань:
-> - Quantas sessões são necessárias?
-> - Quanto tempo demora o procedimento?
-> - Quando posso voltar ao trabalho?
-> - O resultado é permanente?
-> - Quem não é candidato?
-
-_UA: Скільки сеансів / скільки триває / коли на роботу / чи результат постійний /
-кому протипоказано. Відповіді_ `[ПОТРІБНІ ДАНІ]` _+ розмітка FAQPage для SEO._
-
----
-
-### 14. Médico + qualificação confirmada *(довіра, юридично коректно)*
-
-**Макет:** фото лікаря + ім'я + реальна кваліфікація + cédula.
-
-> **[ФОТО]** `[ПОТРІБНІ ДАНІ: Dr./Dra. Nome]`
-> `[ПОТРІБНІ ДАНІ: qualificação real]` · Cédula profissional: `[ПОТРІБНІ ДАНІ]`
-
-_UA: Фото + ім'я + реальна кваліфікація + cédula. НЕ писати «especialista», якщо
-спеціальність офіційно не визнана (вимога ERS). + Schema.org Physician._
-
----
-
-### 15. Preço / princípio de preço *(ціна як інструмент конверсії, за правилами ERS)*
-
-**Макет:** картка ціни з чітким «що входить».
-
-> **Fixo:** `Avaliação médica — €[ПОТРІБНІ ДАНІ]`
-> **Variável:** `Endolaser — desde €[ПОТРІБНІ ДАНІ]` (depende da zona e da complexidade)
->
-> **O que está incluído:** `[ПОТРІБНІ ДАНІ: consulta, procedimento, X consultas de seguimento...]`
-
-_UA: Де ціна фіксована — показуємо. Де залежить — «desde €X», АЛЕ лише якщо ця
-ціна реально доступна, + поруч що саме входить (вимога ERS при рекламі ціни)._
-
----
-
-### 16. CTA фінальний: Marcar avaliação + WhatsApp
-
-> **[CTA] Marcar avaliação**  ·  **[CTA-2] WhatsApp**
-
-_UA: Тут уже можна «Marcar avaliação» — людина прочитала сторінку й готова._
-
----
-
-### 17. Informação clínica / Fontes *(обов'язковий блок — моя пропозиція)*
-
-**Макет:** акуратний дрібний блок унизу.
-
-> **Informação clínica:** O conteúdo desta página tem caráter informativo e não
-> substitui uma consulta médica.
-> **Fontes:** `[ПОТРІБНІ ДАНІ: посилання на наукові джерела для кожного claim]`
-
-_UA: Інформаційний характер + джерела під кожен медичний claim. Дисциплінує
-маркетинг: немає обіцянки без підстави (вимога ERS щодо наукової обґрунтованості)._
-
----
-
-### 18. Footer (глобальний) — обов'язкові ідентифікатори ERS
-
-> - Nome do estabelecimento · Morada (localização)
-> - Nº de inscrição ERS: `[ПОТРІБНІ ДАНІ]`
-> - Registo do estabelecimento / Licença de funcionamento: `[ПОТРІБНІ ДАНІ]`
-> - Contactos · Horário · Mapa (Google Maps)
-> - Política de privacidade (RGPD) · Gestão de cookies
-
-_UA: ERS вимагає обов'язкові ідентифікаційні дані закладу — виносимо у футер
-шаблону, тобто на кожну сторінку._
-
----
-
-## Схема контенту (поля, що визначають БУДЬ-ЯКУ сторінку процедури)
-
-Щоб 6 інших сторінок робилися «по одній системі», кожна процедура = цей набір полів:
-
-```yaml
-slug:                 # endolaser
-hero:
-  h1:                 # проблема у формі питання
-  sub:                # можливе рішення + ключове відмінність
-  image:              # [ФОТО]
-concerns: []          # список скарг (чипи)
-canBeImproved:        # обережний абзац
-howItWorks: []        # кроки
-whyThisApproach: []   # лише перевірювані переваги
-pain:                 # Dói? / анестезія
-recovery: []          # таймлайн по днях
-whenResults:          # коли чекати
-whatItDoesNotDo: []   # чесні обмеження
-threeThingsToKnow: [] # 3 речі перед рішенням
-risks: []             # ризики
-faq: []               # питання/відповіді (+ FAQPage schema)
-doctor:               # фото, ім'я, кваліфікація, cédula
-  name:               # [ПОТРІБНІ ДАНІ]
-  qualification:      # [ПОТРІБНІ ДАНІ]
-  cedula:             # [ПОТРІБНІ ДАНІ]
-price:
-  fixed:              # якщо є
-  from:               # "desde €X" (лише якщо реально доступно)
-  included: []        # що входить (вимога ERS)
-clinicalInfo:         # дисклеймер
-sources: []           # ОБОВ'ЯЗКОВО: джерело під кожен claim
-tracking:
-  leadIdPrefix:       # для наскрізної воронки до Receita
-```
-
-> Коли цей шаблон затверджено — кожна наступна сторінка = заповнення цих полів.
-> Верстку пишемо один раз, контент підставляється.
-
----
-
-## Відкриті питання перед затвердженням шаблону
-
-1. **Мови сайту** — фінально: PT + EN + ? (FR/ES/PL/RU)
-2. **Хто фіксує офлайн-результати** воронки (Compareceu/Procedimento/Receita)?
-   Є CRM, чи стартуємо з таблиці?
-3. **Ціни Endolaser** — фіксована консультація + «desde €X»? Реальні цифри від клініки.
-4. **Дані лікаря** — ім'я, кваліфікація, cédula для блоку довіри.
-5. **ERS-ідентифікатори** закладу для футера.
-6. Чи робимо **intent-сторінки** (papada, gordura localizada) окремо, чи поки лише категорії?
-
----
-
-*Статус: wireframe v0.1 — чекає на затвердження. Після «ок» зроблю візуальний
-HTML-макет цієї сторінки (сіра розкладка з реальною копією), щоб побачити «як на екрані».*
+## Схема контенту (поля для решти сторінок процедур)
+Кожна наступна процедура = заповнення цих полів за цим самим шаблоном:
+`slug · hero{h1,sub,image,microcopy} · identify[cards] · value{text,callout} ·
+howItWorks[steps] · pain · recovery[timeline] · work · results{factors,callout} ·
+whatItDoesNotDo[] · threeThingsToKnow[] · risks[] · faq[] · doctor{name,qualification,cedula,photo} ·
+price{fixed,from,included[]} · ctaPrincipal · international? · clinicalInfo · sources[] ·
+legal{entidade,morada,ers,registo,licenca} · tracking{leadIdPrefix}`

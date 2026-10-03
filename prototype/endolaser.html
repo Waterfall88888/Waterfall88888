@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endolaser em Portimão | Algarvestetic</title>
+<meta name="description" content="Endolaser: procedimento minimamente invasivo para pequenos depósitos de gordura localizada e flacidez, em casos selecionados. Avaliação médica antes do procedimento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+  PROTÓTIPO VISUAL — não é o site final.
+  Cores, logótipo e imagens são marcadores de posição.
+  [ПОТРІБНІ ДАНІ] = dados reais que a clínica tem de fornecer.
+-->
+<style>
+  :root{
+    --bg:#faf7f2; --surface:#ffffff; --ink:#1b2b2a; --muted:#5b6a67; --line:#e7e1d7;
+    --primary:#2e6b60; --primary-dark:#24564d; --on-primary:#ffffff;
+    --accent:#b8976a; --soft:#eef3f1; --warn:#fbf2e9; --warn-line:#e9cfb3;
+    --wa:#1f8f4e;
+    --radius:14px; --maxw:1080px;
+    --serif:"Fraunces", Georgia, serif; --sans:"Inter", system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:var(--primary)}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.2;margin:0 0 .6em;letter-spacing:-.01em}
+  h1{font-size:clamp(1.9rem,4.6vw,3rem)}
+  h2{font-size:clamp(1.5rem,3.2vw,2.2rem)}
+  h3{font-size:1.15rem;font-family:var(--sans);font-weight:600;letter-spacing:0}
+  p{margin:0 0 1em}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+  .section{padding:64px 0}
+  .section.alt{background:var(--surface)}
+  .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.8em}
+  .lead{font-size:1.08rem;color:var(--muted);max-width:62ch}
+  .muted{color:var(--muted)}
+  .placeholder-data{background:#fff4d6;border:1px dashed #d9b04c;color:#7a5a00;padding:1px 6px;border-radius:6px;font-size:.85em;overflow-wrap:anywhere}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 22px;border-radius:999px;font:600 .95rem var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .1s;min-height:48px}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--primary);color:var(--on-primary)}
+  .btn-primary:hover{background:var(--primary-dark)}
+  .btn-outline{background:transparent;border-color:var(--primary);color:var(--primary)}
+  .btn-outline:hover{background:var(--soft)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:40;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .site-header .container{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+  .logo{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
+  .logo span{color:var(--primary)}
+  .header-right{display:flex;align-items:center;gap:14px}
+  .lang{font-size:.85rem;color:var(--muted)}
+  .lang b{color:var(--ink)}
+  .header-cta{padding:10px 18px;min-height:40px;font-size:.88rem}
+  .lang{white-space:nowrap}
+  @media(max-width:879px){.header-cta{display:none}}
+  .breadcrumbs{font-size:.82rem;color:var(--muted);padding:14px 0 0}
+  .breadcrumbs a{color:var(--muted);text-decoration:none}
+
+  /* Hero */
+  .hero{padding:28px 0 56px}
+  .hero-grid{display:grid;gap:28px;align-items:center}
+  .hero .microcopy{font-size:.88rem;color:var(--muted);margin-top:14px;display:flex;align-items:center;gap:8px}
+  .hero .microcopy::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);flex:none}
+  .visual{border-radius:var(--radius);background:linear-gradient(135deg,#dfe9e6,#efe6d8);min-height:240px;display:flex;align-items:flex-end;padding:16px;position:relative;overflow:hidden}
+  .visual::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 60%)}
+  .visual-label{position:relative;z-index:1;background:rgba(255,255,255,.88);border-radius:10px;padding:10px 12px;font-size:.8rem;color:var(--muted);max-width:340px}
+  .visual-label b{color:var(--ink)}
+  @media(min-width:880px){
+    .hero-grid{grid-template-columns:1.1fr .9fr}
+    .visual{min-height:440px}
+  }
+
+  /* Cards */
+  .cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:24px 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .section.alt .card{background:var(--bg)}
+  .card .tag{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--primary);margin-bottom:6px}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .card-icon{width:40px;height:40px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:12px;color:var(--primary);font-weight:700}
+
+  /* Callouts */
+  .callout{border-radius:var(--radius);padding:18px 20px;margin-top:24px;display:flex;gap:14px;align-items:flex-start}
+  .callout.info{background:var(--soft);border-left:4px solid var(--primary)}
+  .callout.warn{background:var(--warn);border-left:4px solid var(--accent)}
+  .callout strong{display:block;margin-bottom:2px}
+  .callout p{margin:0}
+
+  /* Plus-chain (screen 3) */
+  .chain{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0}
+  .chain .pill{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-weight:500}
+  .chain .plus{color:var(--accent);font-weight:700;font-size:1.2rem}
+
+  /* Steps (screen 4) */
+  .steps{display:grid;gap:12px;margin:24px 0;counter-reset:s}
+  .step{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:relative}
+  .step .n{font-family:var(--serif);font-size:1.6rem;color:var(--accent);line-height:1}
+  .step p{margin:.4em 0 0;font-weight:500}
+  @media(min-width:880px){
+    .steps{grid-template-columns:repeat(4,1fr)}
+    .step:not(:last-child)::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:700;z-index:1}
+  }
+
+  /* Two-col text sections */
+  .split{display:grid;gap:24px}
+  @media(min-width:880px){.split{grid-template-columns:1fr 1fr;gap:48px}}
+  .anesth{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+  .anesth .pill{background:var(--soft);color:var(--primary-dark);border-radius:999px;padding:8px 14px;font-weight:600;font-size:.92rem}
+
+  /* Timeline (screen 6) */
+  .timeline{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0}
+  .timeline li{position:relative;padding:0 0 26px 30px;border-left:2px solid var(--line);margin-left:7px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-9px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--primary)}
+  .timeline .when{font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--primary);text-transform:uppercase}
+  .timeline p{margin:.3em 0 0;color:var(--muted)}
+  @media(min-width:880px){
+    .timeline{grid-template-columns:repeat(4,1fr);gap:20px}
+    .timeline li{border-left:none;border-top:2px solid var(--line);padding:26px 0 0;margin:0}
+    .timeline li::before{left:0;top:-9px}
+  }
+
+  /* Factors (screen 8) */
+  .factors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+  .factors li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.92rem}
+
+  /* NOT list (screen 9) */
+  .nots{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
+  .not{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;border-top:4px solid #c46a5a}
+  .not h3{font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  .not p{margin:0;color:var(--muted);font-size:.95rem}
+
+  /* 3 things (screen 10) */
+  .three{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
+  .three .item{background:var(--bg);border-radius:var(--radius);padding:22px;border:1px solid var(--line)}
+  .three .num{font-family:var(--serif);font-size:2rem;color:var(--accent);line-height:1;margin-bottom:8px}
+  .three p{margin:0;color:var(--muted)}
+
+  /* Risks */
+  .risk-list{columns:2;column-gap:28px;padding-left:1.1em;margin:12px 0}
+  @media(max-width:560px){.risk-list{columns:1}}
+
+  /* FAQ */
+  .faq{margin-top:22px;border-top:1px solid var(--line)}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-weight:600;position:relative}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--primary);font-weight:400}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{margin:0 0 18px;color:var(--muted);max-width:70ch}
+
+  /* Doctor */
+  .doctor{display:grid;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:22px}
+  .doctor-photo{aspect-ratio:1;border-radius:12px;background:linear-gradient(135deg,#dfe9e6,#efe6d8);display:grid;place-items:center;color:var(--muted);font-size:.8rem;text-align:center;padding:10px;max-width:200px}
+  .doctor dl{margin:0;display:grid;gap:6px;min-width:0}
+  .doctor dt{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .doctor dd{margin:0 0 8px;font-weight:500}
+  @media(min-width:700px){.doctor{grid-template-columns:200px 1fr}}
+
+  /* Price */
+  .price-box{background:var(--surface);border:2px dashed var(--warn-line);border-radius:var(--radius);padding:22px;margin-top:22px}
+  .price-box .status{display:inline-block;background:var(--warn);color:#8a5a22;font-weight:600;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+
+  /* CTA band + form */
+  .cta-band{background:var(--primary);color:var(--on-primary)}
+  .cta-band h2{color:#fff}
+  .cta-band p{color:#dbe9e5}
+  .cta-band .btn-primary{background:#fff;color:var(--primary-dark)}
+  .cta-band .btn-primary:hover{background:#eef3f1}
+  .form-card{background:var(--surface);color:var(--ink);border-radius:var(--radius);padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+  .form-card h3{font-family:var(--serif);font-weight:500;font-size:1.3rem}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink);min-height:48px}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:transparent}
+  .consent-line{font-size:.8rem;color:var(--muted);margin:4px 0 14px}
+  .thanks{display:none;text-align:center;padding:16px 0}
+  .thanks .check{width:56px;height:56px;border-radius:50%;background:var(--soft);color:var(--primary);display:grid;place-items:center;margin:0 auto 12px;font-size:1.6rem}
+  .form-card.sent form{display:none}
+  .form-card.sent .thanks{display:block}
+  .cta-grid{display:grid;gap:28px;align-items:start}
+  @media(min-width:880px){.cta-grid{grid-template-columns:1fr 1fr;gap:48px}}
+
+  /* International */
+  .intl{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:20px}
+  @media(min-width:880px){.intl{grid-template-columns:1fr 1fr;align-items:start}}
+  .intl .lang-note{font-size:.75rem;color:var(--muted)}
+
+  /* Sources */
+  .sources{font-size:.9rem;color:var(--muted)}
+  .sources ol{padding-left:1.2em}
+
+  /* Footer */
+  .site-footer{background:#16231f;color:#c9d6d2;padding:48px 0 32px;font-size:.9rem}
+  .site-footer h4{color:#fff;font-family:var(--serif);font-weight:500;font-size:1.1rem;margin:0 0 10px}
+  .site-footer a{color:#c9d6d2}
+  .footer-grid{display:grid;gap:28px}
+  @media(min-width:700px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr}}
+  .legal dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+  .legal dt{color:#8fa39e}
+  .legal dd{margin:0}
+  .site-footer .placeholder-data{background:#3a3320;border-color:#8a7330;color:#f0d98c}
+  .footer-bottom{border-top:1px solid #2b3b37;margin-top:28px;padding-top:18px;font-size:.8rem;color:#8fa39e}
+
+  /* Sticky mobile CTA (Requisito 1) */
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(250,247,242,.97);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+  .sticky-cta .btn{flex:1;padding:10px 12px;min-height:44px;font-size:.9rem}
+  @media(min-width:880px){.sticky-cta{display:none}}
+  @media(max-width:879px){body{padding-bottom:72px}}
+
+  /* Cookie banner (RGPD) */
+  .cookie{position:fixed;left:12px;right:12px;bottom:84px;z-index:60;background:var(--ink);color:#e8efed;border-radius:var(--radius);padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:520px;font-size:.88rem}
+  .cookie p{margin:0 0 12px}
+  .cookie .btn{padding:8px 14px;min-height:40px;font-size:.85rem}
+  .cookie .btn-outline{border-color:#9fb3ae;color:#e8efed}
+  .cookie .btn-outline:hover{background:rgba(255,255,255,.08)}
+  .cookie[hidden]{display:none}
+  @media(min-width:880px){.cookie{bottom:20px;left:20px;right:auto}}
+
+  .proto-badge{position:fixed;top:72px;right:12px;z-index:30;background:#fff4d6;color:#7a5a00;border:1px dashed #d9b04c;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px}
+</style>
+</head>
+<body>
+
+<div class="proto-badge" aria-hidden="true">PROTÓTIPO</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="#">Algarve<span>stetic</span></a>
+    <div class="header-right">
+      <span class="lang"><b>PT</b> · EN</span>
+      <a class="btn btn-primary header-cta" href="#avaliar" data-cta="header_marcar">Marcar avaliação</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <a href="#">Home</a> › <a href="#">Especialidades</a> › Endolaser
+    </nav>
+  </div>
+
+  <!-- SCREEN 1 — HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Endolaser · Endolifting</div>
+        <h1>Papada, pequenos depósitos de gordura ou pele mais flácida?</h1>
+        <p class="lead">Endolaser é um procedimento minimamente invasivo que pode ser utilizado, em casos selecionados, para tratar pequenos depósitos de gordura localizada e melhorar a flacidez e o contorno da zona tratada.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#avaliar" data-cta="hero_indicado">Saber se é indicado para mim</a>
+          <a class="btn btn-wa" href="#" data-cta="hero_whatsapp" data-wa>WhatsApp</a>
+        </div>
+        <div class="microcopy">Avaliação médica antes do procedimento.</div>
+      </div>
+      <div class="visual" role="img" aria-label="Espaço para imagem do procedimento">
+        <div class="visual-label"><b>Imagem:</b> médico durante o procedimento, fibra/equipamento em plano profissional, ou visualização anatómica correta. <b>Não</b> usar modelo genérico de beleza.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 — PACIENTE RECONHECE-SE -->
+  <section class="section alt" id="melhorar">
+    <div class="container">
+      <h2>O que gostaria de melhorar?</h2>
+      <div class="cards">
+        <div class="card"><div class="card-icon">1</div><div class="tag">PAPADA</div><p>Pequena acumulação de gordura e/ou flacidez abaixo do queixo.</p></div>
+        <div class="card"><div class="card-icon">2</div><div class="tag">CONTORNO FACIAL</div><p>Perda de definição em determinadas zonas do rosto.</p></div>
+        <div class="card"><div class="card-icon">3</div><div class="tag">GORDURA LOCALIZADA</div><p>Pequenos depósitos de gordura em zonas selecionadas da face ou do corpo.</p></div>
+        <div class="card"><div class="card-icon">4</div><div class="tag">FLACIDEZ</div><p>Perda ligeira a moderada de firmeza dos tecidos em pacientes selecionados.</p></div>
+      </div>
+      <p class="lead">Nem todas estas alterações têm a mesma causa. A avaliação permite perceber se o Endolaser é realmente adequado ao seu caso.</p>
+      <a class="btn btn-outline" href="#avaliar" data-cta="identify_marcar">Marcar avaliação</a>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 — VALOR-CHAVE -->
+  <section class="section" id="valor">
+    <div class="container">
+      <h2>Gordura localizada e flacidez podem coexistir na mesma zona</h2>
+      <p class="lead">É precisamente aqui que o Endolaser pode ser interessante em determinados pacientes.</p>
+      <p style="max-width:62ch">A fibra atua sob a pele e permite ao médico trabalhar diferentes planos dos tecidos, de acordo com o objetivo definido na avaliação. O tratamento pode ser direcionado para:</p>
+      <div class="chain">
+        <span class="pill">pequenos depósitos de gordura localizada</span><span class="plus">+</span>
+        <span class="pill">flacidez e remodelação dos tecidos</span><span class="plus">+</span>
+        <span class="pill">melhoria do contorno</span>
+      </div>
+      <div class="callout warn">
+        <div><strong>Endolaser não é um tratamento para emagrecer.</strong><p>Destina-se a situações selecionadas e não ao tratamento de grandes volumes de gordura.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 4 — COMO FUNCIONA -->
+  <section class="section alt" id="como-funciona">
+    <div class="container">
+      <h2>Como funciona?</h2>
+      <div class="steps">
+        <div class="step"><div class="n">01</div><p>Pequeno ponto de entrada</p></div>
+        <div class="step"><div class="n">02</div><p>Introdução de uma fibra ótica fina sob a pele</p></div>
+        <div class="step"><div class="n">03</div><p>Aplicação controlada da energia laser nos tecidos selecionados</p></div>
+        <div class="step"><div class="n">04</div><p>Recuperação e remodelação progressiva dos tecidos</p></div>
+      </div>
+      <p style="max-width:70ch">A energia produz um efeito térmico controlado. Dependendo da profundidade, da anatomia da zona e do objetivo do tratamento, pode ser utilizada para atuar sobre pequenos depósitos de gordura e promover remodelação dos tecidos.</p>
+      <p class="muted">Os parâmetros e a técnica são individualizados.</p>
+    </div>
+  </section>
+
+  <!-- SCREEN 5 — DÓI? -->
+  <section class="section" id="doi">
+    <div class="container split">
+      <div>
+        <h2>Dói?</h2>
+        <p class="lead">Pode ser desconfortável, mas utilizamos anestesia local para reduzir significativamente a sensibilidade durante o procedimento.</p>
+      </div>
+      <div>
+        <p>Dependendo da zona, podem ser utilizados:</p>
+        <div class="anesth"><span class="pill">Anestesia infiltrativa</span><span class="muted">e/ou</span><span class="pill">Bloqueios anestésicos</span></div>
+        <p>Durante o tratamento pode sentir pressão, manipulação da zona, movimento da fibra ou alguma sensação de calor.</p>
+        <p class="muted">Não prometemos uma experiência completamente indolor porque a sensibilidade varia entre pessoas e entre áreas tratadas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 6 — RECUPERAÇÃO -->
+  <section class="section alt" id="recuperacao">
+    <div class="container">
+      <h2>Como vou ficar depois?</h2>
+      <ol class="timeline">
+        <li><div class="when">Logo após</div><p>Pode existir edema, sensibilidade e sensação de tensão.</p></li>
+        <li><div class="when">Primeiros dias</div><p>Podem surgir pequenos hematomas, desconforto ou endurecimento temporário da zona.</p></li>
+        <li><div class="when">Dias / semanas seguintes</div><p>A área recupera progressivamente. A duração varia com a extensão do tratamento e a resposta individual.</p></li>
+        <li><div class="when">Semanas / meses seguintes</div><p>Continua o processo de remodelação dos tecidos.</p></li>
+      </ol>
+      <div class="callout info"><div><strong>O resultado não deve ser avaliado nos primeiros dias.</strong></div></div>
+    </div>
+  </section>
+
+  <!-- SCREEN 7 — TRABALHO -->
+  <section class="section" id="trabalhar">
+    <div class="container" style="max-width:780px">
+      <h2>Vou conseguir trabalhar?</h2>
+      <p>Muitos pacientes conseguem regressar relativamente cedo às atividades habituais, mas isso depende da zona tratada, extensão do procedimento, edema, hematomas e tipo de trabalho.</p>
+      <div class="callout warn"><div><p>Não recomendamos marcar o tratamento imediatamente antes de um evento importante sem discutir primeiro o período de recuperação.</p></div></div>
+    </div>
+  </section>
+
+  <!-- SCREEN 8 — RESULTADO -->
+  <section class="section alt" id="resultado">
+    <div class="container">
+      <h2>Quando vou começar a notar mudanças?</h2>
+      <p style="max-width:70ch">Algumas alterações do contorno podem tornar-se percetíveis mais cedo, mas a avaliação do resultado deve considerar a recuperação inicial e a remodelação progressiva dos tecidos.</p>
+      <p><strong>A evolução depende de:</strong></p>
+      <ul class="factors">
+        <li>Quantidade de gordura</li><li>Grau de flacidez</li><li>Qualidade da pele</li>
+        <li>Área tratada</li><li>Idade e anatomia</li><li>Resposta individual</li>
+      </ul>
+      <div class="callout info"><div><strong>Mais energia não significa necessariamente melhor resultado.</strong><p>A técnica deve ser adaptada aos tecidos e ao objetivo de cada paciente.</p></div></div>
+    </div>
+  </section>
+
+  <!-- SCREEN 9 — O QUE NÃO FAZ -->
+  <section class="section" id="nao-faz">
+    <div class="container">
+      <h2>O que o Endolaser <em>não</em> faz?</h2>
+      <div class="nots">
+        <div class="not"><h3>Não é um tratamento para emagrecer</h3><p>Não foi concebido para provocar perda geral de peso.</p></div>
+        <div class="not"><h3>Não trata todos os volumes de gordura</h3><p>Grandes acumulações podem necessitar de outra abordagem.</p></div>
+        <div class="not"><h3>Não substitui todas as cirurgias</h3><p>Flacidez importante ou excesso significativo de pele podem necessitar de uma estratégia diferente.</p></div>
+        <div class="not"><h3>Não garante o mesmo resultado a todas as pessoas</h3><p>Anatomia, pele, gordura e capacidade de recuperação variam individualmente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 10 — 3 COISAS -->
+  <section class="section alt" id="antes-de-decidir">
+    <div class="container">
+      <h2>3 coisas que deve saber antes de decidir</h2>
+      <div class="three">
+        <div class="item"><div class="num">01</div><h3>Existe recuperação</h3><p>Pode existir edema, sensibilidade, hematomas ou endurecimento temporário.</p></div>
+        <div class="item"><div class="num">02</div><h3>O resultado é progressivo</h3><p>Não deve avaliar o procedimento imediatamente depois de o realizar.</p></div>
+        <div class="item"><div class="num">03</div><h3>Nem todos precisam de Endolaser</h3><p>Em alguns casos outra técnica pode ser mais adequada. A avaliação existe precisamente para fazer essa distinção.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 11 — RISCOS -->
+  <section class="section" id="riscos">
+    <div class="container" style="max-width:780px">
+      <h2>É seguro?</h2>
+      <p>Endolaser é um procedimento médico minimamente invasivo, mas não é isento de riscos.</p>
+      <p><strong>Entre os efeitos esperados ou possíveis encontram-se:</strong></p>
+      <ul class="risk-list">
+        <li>edema</li><li>hematomas</li><li>sensibilidade</li>
+        <li>desconforto</li><li>endurecimento temporário</li><li>alterações transitórias da sensibilidade</li>
+      </ul>
+      <p>Complicações menos frequentes podem incluir infeção, irregularidades, alterações dos tecidos ou lesão térmica.</p>
+      <p class="muted">Os riscos específicos devem ser discutidos de acordo com a zona e características individuais.</p>
+    </div>
+  </section>
+
+  <!-- SCREEN 12 — FAQ -->
+  <section class="section alt" id="faq">
+    <div class="container" style="max-width:820px">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details><summary>Dói?</summary><p>É utilizada anestesia local. Pode existir algum desconforto, pressão ou sensação de calor.</p></details>
+        <details><summary>Preciso de anestesia geral?</summary><p>Habitualmente não. A técnica anestésica é definida de acordo com a área e extensão do tratamento.</p></details>
+        <details><summary>Ficam cortes?</summary><p>A fibra é introduzida através de pequenos pontos de entrada. Não se trata de uma cirurgia com grandes incisões.</p></details>
+        <details><summary>Uma sessão chega?</summary><p>Pode ser suficiente em determinados casos, mas não existe um número universal. A necessidade de reavaliação ou tratamentos adicionais depende do objetivo e da resposta individual.</p></details>
+        <details><summary>Quando posso voltar ao ginásio?</summary><p>Depende da área e extensão tratadas. As orientações são dadas individualmente após o procedimento.</p></details>
+        <details><summary>Posso apanhar sol?</summary><p>Os cuidados dependem da zona tratada e da evolução pós-procedimento. Devem ser seguidas as orientações médicas específicas.</p></details>
+        <details><summary>Quanto tempo dura o resultado?</summary><p>A duração depende do tratamento realizado, das características dos tecidos, do envelhecimento, de alterações de peso e de outros fatores individuais.</p></details>
+        <details><summary>Posso fazer Endolaser se tiver muita pele em excesso?</summary><p>Nem sempre. Quando existe excesso importante de pele, uma abordagem diferente pode proporcionar uma correção mais adequada.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 13 — QUEM REALIZA -->
+  <section class="section" id="medico">
+    <div class="container">
+      <h2>Avaliação e procedimento</h2>
+      <div class="doctor">
+        <div class="doctor-photo">Foto real do médico</div>
+        <dl>
+          <dt>Nome completo</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dt>Qualificação profissional</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ — só qualificações reais e reconhecidas]</span></dd>
+          <dt>Cédula profissional</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dd class="muted" style="font-weight:400">Descrição curta, exclusivamente com qualificações verificáveis. Não utilizar títulos não reconhecidos.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 14 — PREÇO -->
+  <section class="section alt" id="preco">
+    <div class="container" style="max-width:780px">
+      <h2>Preço</h2>
+      <div class="price-box">
+        <span class="status">Não publicar até decisão da administração</span>
+        <p><strong>Endolaser — desde €<span class="placeholder-data">___</span></strong></p>
+        <p class="muted">O valor depende da área e extensão do tratamento e é definido após avaliação.</p>
+        <p style="margin:0;font-size:.9rem">A definir: preço da avaliação · preço mínimo real · zonas incluídas · o que está incluído · o que pode ter custo adicional.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 15 — CTA PRINCIPAL + FORM (Requisitos 3 e 4) -->
+  <section class="section cta-band" id="avaliar">
+    <div class="container cta-grid">
+      <div>
+        <h2>Ainda não sabe se Endolaser é adequado para si?</h2>
+        <p>Não precisa de decidir pela técnica antes da consulta.</p>
+        <p>Comece por perceber o que está a causar a alteração do contorno e quais são as opções adequadas ao seu caso.</p>
+        <div class="btn-row">
+          <a class="btn btn-wa" href="#" data-cta="cta_whatsapp" data-wa>Contactar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="form-card" id="lead-card">
+        <form id="lead-form" novalidate>
+          <h3>Saber se é indicado para mim</h3>
+          <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+          <div class="field"><label for="f-contacto">Telefone ou email</label><input id="f-contacto" name="contacto" autocomplete="tel" required></div>
+          <div class="field"><label for="f-zona">O que gostaria de avaliar?</label>
+            <select id="f-zona" name="zona">
+              <option>Papada</option><option>Contorno facial</option><option>Gordura localizada</option><option>Flacidez</option><option>Não tenho a certeza</option>
+            </select>
+          </div>
+          <input type="hidden" name="lead_id" id="f-lead">
+          <input type="hidden" name="page" value="endolaser">
+          <p class="consent-line">Ao enviar, aceita ser contactado para organizar a avaliação. Ver <a href="#">Política de Privacidade</a>.</p>
+          <button class="btn btn-primary" type="submit" style="width:100%">Enviar pedido</button>
+        </form>
+        <div class="thanks" role="status" aria-live="polite">
+          <div class="check">✓</div>
+          <h3>Pedido recebido.</h3>
+          <p class="muted">Entraremos em contacto para organizar a avaliação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 16 — INTERNATIONAL PATIENTS (Requisito 5) -->
+  <section class="section" id="international" lang="en">
+    <div class="container">
+      <div class="intl">
+        <div>
+          <div class="eyebrow">International patients</div>
+          <h2>Visiting the Algarve?</h2>
+          <p>If you are travelling to the Algarve and would like to plan an assessment or treatment during your stay, visit our International Patients page.</p>
+          <a class="btn btn-outline" href="#" data-cta="intl_plan">Plan your visit</a>
+          <p class="lang-note" style="margin-top:14px">Block shown only on the PT page. Leads to the international pathway (timing, recovery, follow-up).</p>
+        </div>
+        <form class="form-card" style="box-shadow:none;border:1px solid var(--line)" onsubmit="return false">
+          <p class="muted" style="font-size:.85rem;margin-bottom:12px">Preview of the qualification form on the International Patients page:</p>
+          <div class="field"><label>Where do you live?</label><input placeholder="Country / city"></div>
+          <div class="field"><label>When will you be in the Algarve?</label><input type="date"></div>
+          <div class="field"><label>How long will you stay?</label><select><option>Less than 1 week</option><option>1–2 weeks</option><option>More than 2 weeks</option></select></div>
+          <div class="field"><label>What would you like assessed?</label><input placeholder="e.g. double chin"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 17 — INFORMAÇÃO CLÍNICA -->
+  <section class="section alt" id="fontes">
+    <div class="container sources" style="max-width:820px">
+      <h2 style="color:var(--ink)">Informação clínica e fontes</h2>
+      <p>O conteúdo desta página tem caráter informativo e não substitui uma consulta médica.</p>
+      <ol>
+        <li><span class="placeholder-data">[ПОТРІБНІ ДАНІ — fonte 1]</span></li>
+        <li><span class="placeholder-data">[ПОТРІБНІ ДАНІ — fonte 2]</span></li>
+        <li><span class="placeholder-data">[ПОТРІБНІ ДАНІ — fonte 3]</span></li>
+      </ol>
+      <p style="font-size:.82rem">3–5 fontes atuais e de qualidade, apenas para afirmações presentes nesta página. Revisão do texto quando a evidência mudar. Última revisão: <span class="placeholder-data">[data]</span></p>
+    </div>
+  </section>
+</main>
+
+<!-- SCREEN 18 — LEGAL / ERS -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="legal">
+        <h4>Algarvestetic</h4>
+        <dl>
+          <dt>Entidade</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dt>Morada</dt><dd>Portimão, Algarve · <span class="placeholder-data">[morada completa]</span></dd>
+          <dt>Inscrição ERS</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dt>Registo</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dt>Licença</dt><dd><span class="placeholder-data">[quando aplicável]</span></dd>
+        </dl>
+      </div>
+      <div>
+        <h4>Contactos</h4>
+        <p><span class="placeholder-data">[telefone]</span><br><span class="placeholder-data">[email]</span><br>WhatsApp · Horário</p>
+      </div>
+      <div>
+        <h4>Informação</h4>
+        <p><a href="#">Política de Privacidade</a><br><a href="#" id="manage-cookies">Gestão de cookies</a><br><a href="#">International Patients</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">Os números de registo não são inventados: são preenchidos apenas com os dados oficiais da clínica.</div>
+  </div>
+</footer>
+
+<!-- Requisito 1 — Sticky CTA mobile -->
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="#avaliar" data-cta="sticky_marcar">Marcar</a>
+  <a class="btn btn-wa" href="#" data-cta="sticky_whatsapp" data-wa>WhatsApp</a>
+</div>
+
+<!-- RGPD cookie consent -->
+<div class="cookie" id="cookie" hidden>
+  <p>Usamos cookies de medição apenas com o seu consentimento, para perceber que páginas ajudam os pacientes a chegar à avaliação.</p>
+  <div class="btn-row" style="margin:0">
+    <button class="btn btn-primary" data-consent="granted">Aceitar</button>
+    <button class="btn btn-outline" data-consent="denied">Recusar</button>
+  </div>
+</div>
+
+<script>
+  // lead_id: liga o pedido do site às etapas offline (Marcação → Compareceu → Procedimento → Receita).
+  const leadId = 'endo-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 7);
+  document.getElementById('f-lead').value = leadId;
+
+  // Consentimento RGPD: nenhum evento de medição é enviado antes de "Aceitar".
+  let consent = null;
+  try { consent = localStorage.getItem('consent'); } catch (e) {}
+  const cookie = document.getElementById('cookie');
+  if (!consent) cookie.hidden = false;
+  cookie.addEventListener('click', e => {
+    const v = e.target.dataset.consent; if (!v) return;
+    consent = v; try { localStorage.setItem('consent', v); } catch (e) {}
+    cookie.hidden = true;
+  });
+  document.getElementById('manage-cookies').addEventListener('click', e => { e.preventDefault(); cookie.hidden = false; });
+
+  function track(event, params) {
+    if (consent !== 'granted') return;            // Consent Mode: sem consentimento, nada é enviado
+    // Produção: gtag('event', event, params) + Meta Pixel/CAPI com o mesmo event_id
+    console.log('[track]', event, params);
+  }
+
+  // Cliques nos CTA
+  document.querySelectorAll('[data-cta]').forEach(el =>
+    el.addEventListener('click', () => track('cta_click', { cta: el.dataset.cta, lead_id: leadId })));
+
+  // WhatsApp com lead_id na mensagem pré-preenchida
+  const waText = encodeURIComponent('Olá, gostaria de saber se o Endolaser é indicado para mim. (ref: ' + leadId + ')');
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    a.href = 'https://wa.me/?text=' + waText;    // [ПОТРІБНІ ДАНІ]: número da clínica
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+
+  // Formulário curto → ecrã "Pedido recebido" + conversion event
+  document.getElementById('lead-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.nome.value.trim() || !f.contacto.value.trim()) { f.reportValidity(); return; }
+    track('generate_lead', { page: 'endolaser', zona: f.zona.value, lead_id: leadId });
+    document.getElementById('lead-card').classList.add('sent');
+  });
+</script>
+</body>
+</html>
