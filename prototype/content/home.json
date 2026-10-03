@@ -1,0 +1,113 @@
+{
+  "type": "home",
+  "slug": "index",
+  "leadPrefix": "home",
+  "bookingNoun": "consulta",
+  "title": "Centro Médico em Portimão | AlgarvEstetic",
+  "description": "Centro médico em Portimão. Consultas médicas, Cirurgia Geral, doenças da pele, medicina estética, tratamentos capilares e tecnologias laser. Marque a sua avaliação.",
+  "h1": "Centro Médico em Portimão — Saúde, Cirurgia e Medicina Estética",
+  "sub": "Consultas médicas, procedimentos e tratamentos personalizados para residentes e visitantes do Algarve.",
+  "imageNote": "equipa médica real, receção ou consultório da clínica. Deve parecer um centro médico, não um salão de beleza.",
+  "areas": {
+    "title": "Como podemos ajudar?",
+    "intro": "Escolha a área que corresponde à sua preocupação.",
+    "items": [
+      {
+        "name": "Endolaser / Endolifting",
+        "tags": ["Papada", "Gordura localizada", "Flacidez"],
+        "text": "Procedimento minimamente invasivo para casos selecionados de pequenos depósitos de gordura e flacidez.",
+        "links": [{ "label": "Saber mais", "page": "endolaser-algarve" }]
+      },
+      {
+        "name": "Laser CO₂ Fracionado",
+        "tags": ["Cicatrizes de acne", "Textura", "Poros", "Linhas finas"],
+        "text": "Renovação controlada da pele e remodelação progressiva dos tecidos.",
+        "links": [{ "label": "Saber mais", "page": "laser-co2-fracionado-algarve" }]
+      },
+      {
+        "name": "Cirurgia Estética",
+        "tags": ["Correção das pálpebras", "Saúde e estética da zona íntima"],
+        "text": "Avaliação médica e abordagem individual de acordo com a anatomia e o objetivo de cada paciente.",
+        "links": [
+          { "label": "Correção das pálpebras", "page": "blefaroplastia-algarve" },
+          { "label": "Saúde e estética da zona íntima", "page": "saude-estetica-intima" }
+        ]
+      },
+      {
+        "name": "Tratamento Capilar",
+        "tags": ["Queda de cabelo", "Menor densidade", "PRP", "PRF"],
+        "text": "Primeiro avaliamos o padrão da queda. Depois definimos se existe indicação para tratamento.",
+        "links": [{ "label": "Saber mais", "page": "queda-de-cabelo-algarve" }]
+      },
+      {
+        "name": "Tratamento de Cicatrizes",
+        "tags": ["Acne", "Cirurgia", "Trauma", "Cicatrizes hipertróficas", "Queloides"],
+        "text": "Avaliamos o tipo de cicatriz antes de escolher a técnica ou combinação de tratamentos.",
+        "links": [{ "label": "Saber mais", "page": "tratamento-cicatrizes-algarve" }]
+      },
+      {
+        "name": "Doenças da Pele",
+        "tags": ["Sinais", "Dermatoscopia", "Acne", "Manchas", "Verrugas", "Biópsias"],
+        "text": "Avaliação de alterações da pele, dermatoscopia e estudo histopatológico quando indicado.",
+        "links": [{ "label": "Saber mais", "page": "doencas-da-pele-portimao" }]
+      },
+      {
+        "name": "Avaliação Proctológica",
+        "sub": "Consulta de Cirurgia Geral",
+        "tags": ["Hemorroidas", "Fissura anal", "Fístula", "Doença pilonidal"],
+        "text": "Primeiro identificamos a causa dos sintomas. Depois definimos a abordagem adequada.",
+        "links": [{ "label": "Saber mais", "page": "avaliacao-proctologica-portimao" }]
+      }
+    ]
+  },
+  "notSure": {
+    "title": "Não sabe qual tratamento escolher?",
+    "text": [
+      "Não precisa de escolher uma técnica antes da consulta.",
+      "Uma mesma preocupação pode ter causas diferentes. A avaliação médica permite perceber o que está a causar o problema e quais são as opções adequadas."
+    ]
+  },
+  "why": {
+    "title": "Uma abordagem médica antes de qualquer procedimento",
+    "items": [
+      { "h": "Avaliação primeiro", "p": "A indicação é definida antes de escolher o tratamento." },
+      { "h": "Diferentes abordagens", "p": "Quando existem várias opções, a escolha depende do problema, anatomia, objetivos e indicação médica." },
+      { "h": "Acompanhamento", "p": "O tratamento não termina no dia do procedimento. O acompanhamento é definido de acordo com a intervenção realizada." },
+      { "h": "Diagnóstico quando necessário", "p": "Dermatoscopia, biópsia e estudo histopatológico estão disponíveis quando clinicamente indicados." }
+    ]
+  },
+  "international": {
+    "title": "Visiting the Algarve?",
+    "sub": "Plan your medical or aesthetic care during your stay.",
+    "text": "If you live abroad or are visiting the Algarve, selected consultations and treatments can be planned in advance.",
+    "points": [
+      "what should be assessed before treatment",
+      "how much time you may need in Portugal",
+      "expected recovery",
+      "when follow-up is required"
+    ]
+  },
+  "question": {
+    "title": "Tem uma dúvida antes de marcar?",
+    "text": [
+      "Se não sabe qual consulta deve marcar, diga-nos brevemente o que o preocupa.",
+      "A equipa poderá orientá-lo para a área adequada."
+    ]
+  },
+  "final": {
+    "title": "Comece pela avaliação certa.",
+    "text": "Não precisa de saber previamente qual tratamento necessita."
+  },
+  "formTitle": "Marcar consulta / avaliação",
+  "formLabel": "Que área procura?",
+  "formOptions": [
+    "Endolaser / Endolifting",
+    "Laser CO₂ Fracionado",
+    "Cirurgia Estética",
+    "Tratamento Capilar",
+    "Tratamento de Cicatrizes",
+    "Doenças da Pele",
+    "Consulta de Cirurgia Geral"
+  ],
+  "whatsappText": "Olá, gostaria de marcar uma consulta."
+}

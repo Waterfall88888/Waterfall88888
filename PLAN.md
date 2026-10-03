@@ -193,5 +193,50 @@
 
 ---
 
-*Статус: план v0.2. Наступний крок — затвердити еталонний wireframe
-`wireframes/endolaser.md`, далі візуальний HTML-макет цієї сторінки.*
+## 12. Архітектура сайту та SEO-карта (зафіксовано)
+
+Home — медичний центр + 7 основних напрямів. Home не має виглядати як салон
+лазерних процедур: Endolaser і CO₂ не домінують над медичною частиною.
+
+| Сторінка | URL | H1 | Title |
+|---|---|---|---|
+| Home | `/` | Centro Médico em Portimão — Saúde, Cirurgia e Medicina Estética | Centro Médico em Portimão \| AlgarvEstetic |
+| Endolaser | `/endolaser-algarve/` | Endolaser no Algarve — Gordura Localizada e Flacidez | Endolaser Algarve \| Gordura Localizada e Flacidez |
+| Laser CO₂ | `/laser-co2-fracionado-algarve/` | Laser CO₂ Fracionado no Algarve | Laser CO₂ Algarve \| Cicatrizes de Acne e Textura da Pele |
+| Pálpebras | `/blefaroplastia-algarve/` | Correção das Pálpebras (Blefaroplastia) no Algarve | Blefaroplastia Algarve \| Correção das Pálpebras |
+| Zona íntima | `/saude-estetica-intima/` | Saúde e Estética da Zona Íntima | Saúde e Estética Íntima \| AlgarvEstetic Algarve |
+| Capilar | `/queda-de-cabelo-algarve/` | Queda de Cabelo — Avaliação e Tratamento no Algarve | Queda de Cabelo Algarve \| PRP e PRF Capilar |
+| Cicatrizes | `/tratamento-cicatrizes-algarve/` | Tratamento de Cicatrizes no Algarve | Tratamento de Cicatrizes Algarve \| Acne, Cirurgia e Trauma |
+| Doenças da pele | `/doencas-da-pele-portimao/` | Avaliação de Doenças e Alterações da Pele em Portimão | Doenças da Pele Portimão \| Dermatoscopia, Acne e Biópsias |
+| Proctologia | `/avaliacao-proctologica-portimao/` | Avaliação Proctológica em Portimão (+ «Consulta de Cirurgia Geral») | Proctologia Portimão \| Hemorroidas, Fissuras e Avaliação |
+| International | `/international-patients-algarve/` | — (EN-воронка) | — |
+
+**Наступна черга дочірніх SEO-сторінок:** `/cicatrizes-acne-algarve/` (пріоритет),
+`/dermatoscopia-portimao/`, `/acne-portimao/`, `/biopsia-pele-portimao/`,
+`/verrugas-papilomas-portimao/`, `/manchas-pele-fotoenvelhecimento/`.
+
+**Algarve vs Portimão у URL:** процедури, заради яких їдуть з усього регіону →
+`-algarve`; консультації з локальним наміром (шкіра, проктологія) → `-portimao`.
+
+### Правила контенту (для всіх сторінок)
+- **VISIBLE / FAQ / REMOVE:** основний скрол — 3–6 екранів (проблема → що можемо →
+  біль/відновлення → що далі). Деталі — у FAQ. Повтори — прибрати.
+- **CTA:** Hero + один після ключового медичного блоку + фінальний; на мобільному —
+  sticky `Marcar | WhatsApp`. Не ставити WhatsApp після кожного блоку.
+- **Заборонено:** «Dermatologia», «Dermatologista», «Especialista» щодо діяльності
+  клініки; невизнані титули; гарантії результату; рекламне «desde €» без реальної ціни.
+- **FAQ-відповіді** — лише затверджений лікарем текст. Без відповіді питання
+  показується як «[ПОТРІБНІ ДАНІ]» і не потрапляє в Schema.org.
+- **Чутливі сторінки** (зона íntima, proctologia): форма не збирає симптоми
+  (мінімізація даних RGPD), текст WhatsApp — нейтральний.
+- **Footer:** + Livro de Reclamações (обов'язковий для сайтів бізнесу в PT).
+
+### Міграція старого сайту (наступний технічний етап)
+Старий algarvestetic.com індексується; його тексти суперечать новим правилам
+(напр., «especialistas experientes», «garantindo resultados ótimos»). Потрібно:
+контент-аудит → таблиця «залишити / переписати / видалити / 301» → карта 301-редиректів
+на нові URL, щоб старі сторінки не конкурували з новими.
+
+---
+
+*Статус: план v0.3. Прототипи всіх 8 сторінок напрямів + Home — у `prototype/`.*

@@ -1,0 +1,55 @@
+{
+  "slug": "laser-co2-fracionado-algarve",
+  "leadPrefix": "co2",
+  "name": "Laser CO₂ Fracionado",
+  "title": "Laser CO₂ Algarve | Cicatrizes de Acne e Textura da Pele",
+  "description": "Laser CO₂ Fracionado no Algarve para cicatrizes de acne, textura irregular, poros mais visíveis e linhas finas. Avaliação médica da pele antes do tratamento.",
+  "h1": "Laser CO₂ Fracionado no Algarve",
+  "hook": "Cicatrizes de acne, textura irregular, poros mais visíveis ou linhas finas?",
+  "heroText": [
+    "O Laser CO₂ Fracionado cria microzonas controladas de tratamento, promovendo renovação da pele e remodelação do colagénio."
+  ],
+  "ctaLabel": "Avaliar a minha pele",
+  "microcopy": "Avaliação médica antes do procedimento.",
+  "imageNote": "médico a realizar o procedimento, equipamento CO₂ em plano profissional, ou textura da pele em grande plano (com consentimento). Não usar modelo genérico de beleza.",
+  "chips": {
+    "label": "Pode ser considerado para:",
+    "items": ["Cicatrizes de acne", "Textura irregular", "Poros mais visíveis", "Linhas finas", "Determinadas cicatrizes"]
+  },
+  "blocks": [
+    { "id": "como-funciona", "h": "Como funciona?", "answer": [
+      { "p": "O laser trata pequenas áreas da pele de forma fracionada, desencadeando um processo de reparação e remodelação." }
+    ] },
+    { "id": "doi", "h": "Dói?", "answer": [
+      { "p": "Pode provocar calor, ardor ou picadas. É utilizada anestesia adequada à intensidade e à zona tratada." }
+    ] },
+    { "id": "recuperacao", "h": "Recuperação", "answer": [
+      { "p": "Vermelhidão, edema, pequenas crostas e descamação podem ocorrer durante vários dias." }
+    ] },
+    { "id": "resultado", "h": "Resultado", "answer": [
+      { "p": "Primeiro a pele recupera. A remodelação continua progressivamente nas semanas e meses seguintes." }
+    ] }
+  ],
+  "keys": [
+    "As cicatrizes podem melhorar, mas não podemos prometer que desapareçam.",
+    "A fotoproteção após o tratamento é fundamental."
+  ],
+  "faq": [
+    { "q": "Quantas sessões?" },
+    { "q": "Quando posso usar maquilhagem?" },
+    { "q": "Quando posso trabalhar?" },
+    { "q": "Posso apanhar sol?", "a": [
+      { "p": "A fotoproteção é fundamental durante a recuperação. Exposição solar inadequada aumenta o risco de alterações da pigmentação." }
+    ] },
+    { "q": "Posso ficar com manchas?" },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Podem ocorrer alterações da pigmentação, vermelhidão prolongada, infeção, alterações da textura ou cicatrização desfavorável." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Será adequado para a minha pele?",
+    "text": ["Primeiro identificamos a alteração e avaliamos o tipo de pele. Depois definimos se CO₂ é a opção adequada."]
+  },
+  "formOptions": ["Cicatrizes de acne", "Textura irregular", "Poros visíveis", "Linhas finas", "Outras cicatrizes"],
+  "whatsappText": "Olá, gostaria de avaliar se o Laser CO₂ Fracionado é indicado para a minha pele."
+}

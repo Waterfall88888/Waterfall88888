@@ -38,7 +38,7 @@
     e.preventDefault();
     const f = e.target;
     if (!f.nome.value.trim() || !f.contacto.value.trim()) { f.reportValidity(); return; }
-    track('generate_lead', { page: P.slug, zona: f.zona.value, lead_id: leadId });
+    track('generate_lead', { page: P.slug, zona: f.zona ? f.zona.value : undefined, lead_id: leadId });
     document.getElementById('lead-card').classList.add('sent');
   });
 })();

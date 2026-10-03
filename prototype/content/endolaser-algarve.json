@@ -1,0 +1,62 @@
+{
+  "slug": "endolaser-algarve",
+  "leadPrefix": "endo",
+  "name": "Endolaser",
+  "title": "Endolaser Algarve | Gordura Localizada e Flacidez",
+  "description": "Endolaser no Algarve: procedimento minimamente invasivo para casos selecionados de papada, gordura localizada e flacidez. Avaliação médica antes do procedimento.",
+  "h1": "Endolaser no Algarve — Gordura Localizada e Flacidez",
+  "hook": "Papada, gordura localizada ou pele mais flácida?",
+  "heroText": [
+    "O Endolaser é um procedimento minimamente invasivo utilizado, em casos selecionados, para pequenos depósitos de gordura localizada e flacidez, ajudando a melhorar o contorno da zona tratada."
+  ],
+  "ctaLabel": "Saber se é indicado para mim",
+  "microcopy": "Avaliação médica antes do procedimento.",
+  "imageNote": "médico durante o procedimento, fibra/equipamento em plano profissional, ou visualização anatómica correta. Não usar modelo genérico de beleza.",
+  "chips": {
+    "label": "Pode ser considerado para:",
+    "items": ["Papada", "Gordura localizada", "Perda de definição do contorno", "Flacidez ligeira a moderada"]
+  },
+  "blocks": [
+    { "id": "como-funciona", "h": "Como funciona?", "answer": [
+      { "p": "Uma fibra ótica fina é introduzida sob a pele. A energia laser permite atuar sobre pequenos depósitos de gordura e promover remodelação dos tecidos." }
+    ] },
+    { "id": "doi", "h": "Dói?", "answer": [
+      { "p": "Pode ser desconfortável. Utilizamos anestesia local infiltrativa e/ou bloqueios anestésicos, conforme a zona." }
+    ] },
+    { "id": "recuperacao", "h": "Recuperação", "answer": [
+      { "p": "Podem ocorrer edema, pequenos hematomas, sensibilidade e endurecimento temporário." }
+    ] },
+    { "id": "resultado", "h": "Resultado", "answer": [
+      { "p": "A remodelação é progressiva e continua durante as semanas e meses seguintes." }
+    ] }
+  ],
+  "keys": ["Endolaser não é um tratamento para emagrecer."],
+  "faq": [
+    { "q": "Uma sessão chega?", "a": [
+      { "p": "Pode ser suficiente em determinados casos, mas não existe um número universal. A necessidade de reavaliação ou tratamentos adicionais depende do objetivo e da resposta individual." }
+    ] },
+    { "q": "Quando posso trabalhar?", "a": [
+      { "p": "Muitos pacientes conseguem regressar relativamente cedo às atividades habituais, mas isso depende da zona tratada, extensão do procedimento, edema, hematomas e tipo de trabalho." },
+      { "p": "Não recomendamos marcar o tratamento imediatamente antes de um evento importante sem discutir primeiro o período de recuperação." }
+    ] },
+    { "q": "Quando posso fazer exercício?", "a": [
+      { "p": "Depende da área e extensão tratadas. As orientações são dadas individualmente após o procedimento." }
+    ] },
+    { "q": "Ficam cicatrizes?", "a": [
+      { "p": "A fibra é introduzida através de pequenos pontos de entrada. Não se trata de uma cirurgia com grandes incisões." }
+    ] },
+    { "q": "Substitui cirurgia?", "a": [
+      { "p": "Nem sempre. Excesso importante de pele, flacidez acentuada ou maior volume de gordura podem necessitar de outra abordagem." }
+    ] },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Endolaser é um procedimento médico minimamente invasivo, mas não é isento de riscos. Podem ocorrer infeção, irregularidades, alterações da sensibilidade, lesão térmica e outras complicações menos frequentes." },
+      { "p": "Os riscos específicos são explicados antes do procedimento." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Será adequado para mim?",
+    "text": ["Se pretende melhorar papada, gordura localizada, flacidez ou definição do contorno, comece por uma avaliação."]
+  },
+  "formOptions": ["Papada", "Gordura localizada", "Flacidez", "Definição do contorno"],
+  "whatsappText": "Olá, gostaria de saber se o Endolaser é indicado para mim."
+}

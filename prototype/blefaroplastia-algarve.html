@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laser CO₂ Fracionado em Portimão | Algarvestetic</title>
-<meta name="description" content="Laser CO₂ Fracionado para cicatrizes de acne, textura irregular, poros mais visíveis e linhas finas. Avaliação médica da pele antes do procedimento.">
+<title>Blefaroplastia Algarve | Correção das Pálpebras</title>
+<meta name="description" content="Correção das pálpebras (blefaroplastia) no Algarve: avaliação do excesso de pele, bolsas palpebrais e sensação de peso. Abordagem individual de acordo com a anatomia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <!--
-  PROTÓTIPO VISUAL — não é o site final. Gerado por prototype/build.mjs a partir de content/laser-co2.json.
+  PROTÓTIPO VISUAL — não é o site final. Gerado por prototype/build.mjs a partir de content/blefaroplastia-algarve.json.
+  URL de produção previsto: /blefaroplastia-algarve/
   Cores, logótipo e imagens são marcadores de posição. [ПОТРІБНІ ДАНІ] = dados reais da clínica.
 -->
 <script type="application/ld+json">
@@ -19,50 +20,18 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "O Laser CO₂ Fracionado dói?",
+      "name": "Trata olheiras?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pode provocar calor, ardor ou picadas. Conforme a intensidade e a zona, pode ser utilizada anestesia tópica, infiltrativa e/ou bloqueios anestésicos."
+        "text": "Não trata automaticamente todas as: rugas perioculares; olheiras; alterações pigmentares; alterações da posição das sobrancelhas"
       }
     },
     {
       "@type": "Question",
-      "name": "Como é a recuperação do Laser CO₂ Fracionado?",
+      "name": "Quais são os riscos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Podem ocorrer: vermelhidão; edema; ardor; pequenas crostas; descamação Existe um período visível de recuperação, cuja duração depende da intensidade do tratamento."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quando vejo o resultado do Laser CO₂ Fracionado?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Primeiro ocorre a recuperação da pele. A remodelação desenvolve-se progressivamente durante as semanas e meses seguintes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O Laser CO₂ faz desaparecer as cicatrizes de acne?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Não podemos prometer isso. O objetivo é melhorar a textura, profundidade e aparência das cicatrizes. Cicatrizes diferentes podem necessitar de tratamentos diferentes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso apanhar sol depois do Laser CO₂?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A fotoproteção é fundamental durante a recuperação. Exposição solar inadequada aumenta o risco de alterações da pigmentação."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Existem riscos no Laser CO₂ Fracionado?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Podem ocorrer alterações da pigmentação, vermelhidão prolongada, infeção, alterações da textura ou cicatrização desfavorável."
+        "text": "Entre as possíveis complicações encontram-se sangramento, infeção, assimetria, cicatrização desfavorável, alterações da posição palpebral, olho seco e outras complicações menos frequentes."
       }
     }
   ]
@@ -95,7 +64,7 @@ p{margin:0 0 1em}
 .placeholder-data{background:#fff4d6;border:1px dashed #d9b04c;color:#7a5a00;padding:1px 6px;border-radius:6px;font-size:.85em;overflow-wrap:anywhere}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 22px;border-radius:999px;font:600 .95rem var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .1s;min-height:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 22px;border-radius:999px;font:600 .95rem var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .1s;min-height:48px;text-align:center}
 .btn:active{transform:translateY(1px)}
 .btn-primary{background:var(--primary);color:var(--on-primary)}
 .btn-primary:hover{background:var(--primary-dark)}
@@ -109,6 +78,12 @@ p{margin:0 0 1em}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
 .logo{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
 .logo span{color:var(--primary)}
+.main-nav{display:none}
+@media(min-width:1000px){
+  .main-nav{display:flex;gap:22px;font-size:.9rem}
+  .main-nav a{color:var(--muted);text-decoration:none}
+  .main-nav a:hover{color:var(--ink)}
+}
 .header-right{display:flex;align-items:center;gap:14px}
 .lang{font-size:.85rem;color:var(--muted);white-space:nowrap}
 .lang b{color:var(--ink)}
@@ -120,6 +95,9 @@ p{margin:0 0 1em}
 /* Hero */
 .hero{padding:28px 0 56px}
 .hero-grid{display:grid;gap:28px;align-items:center}
+.seo-h1{font:600 1rem/1.4 var(--sans);color:var(--primary);margin:0 0 .5em;letter-spacing:0}
+.h1-sub{font-size:.88rem;color:var(--muted);margin:-.3em 0 .9em}
+.hook{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 .5em}
 .hero .microcopy{font-size:.88rem;color:var(--muted);margin-top:14px;display:flex;align-items:center;gap:8px}
 .hero .microcopy::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);flex:none}
 .visual{border-radius:var(--radius);background:linear-gradient(135deg,#dfe9e6,#efe6d8);min-height:240px;display:flex;align-items:flex-end;padding:16px;position:relative;overflow:hidden}
@@ -131,13 +109,12 @@ p{margin:0 0 1em}
   .visual{min-height:420px}
 }
 
-/* Para que serve — cards */
-.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:24px 0 0}
-.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.card p{margin:0;font-weight:500}
-.card-icon{width:40px;height:40px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:12px;color:var(--primary);font-weight:700}
+/* Chips (indicações) */
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:16px 0 0}
+.chips li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-weight:500}
+.chips-note{margin:18px 0 0;color:var(--muted);max-width:70ch}
 
-/* Q&A rows */
+/* Blocos visíveis (pergunta | resposta) */
 .qa{border-top:1px solid var(--line)}
 .qa-row{display:grid;gap:10px;padding:32px 0;border-bottom:1px solid var(--line)}
 .qa-row h2{font-size:clamp(1.35rem,2.6vw,1.75rem);margin:0}
@@ -150,6 +127,23 @@ p{margin:0 0 1em}
 .know{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .know li{display:flex;gap:14px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;font-weight:600}
 .know .num{font-family:var(--serif);font-size:1.3rem;color:var(--accent);font-weight:500}
+
+/* Mensagens-chave + CTA intermédio */
+.keys{margin-top:32px;display:grid;gap:12px}
+.callout{border-radius:var(--radius);padding:18px 20px}
+.callout p{margin:0}
+.callout.info{background:var(--soft);border-left:4px solid var(--primary);font-weight:600}
+.mid-cta{margin-top:24px}
+
+/* FAQ */
+.faq{margin-top:22px;border-top:1px solid var(--line);max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--primary);font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .faq-a{padding:0 0 18px;color:var(--muted);max-width:70ch}
+.faq .faq-a p:last-child,.faq .faq-a ul:last-child{margin-bottom:0}
 
 /* Doctor */
 .doctor{display:grid;gap:22px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:22px}
@@ -185,17 +179,52 @@ p{margin:0 0 1em}
 .intl{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:20px}
 @media(min-width:880px){.intl{grid-template-columns:1fr 1fr;align-items:start}}
 .intl .lang-note{font-size:.75rem;color:var(--muted)}
+.check-list{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:8px}
+.check-list li{padding-left:26px;position:relative}
+.check-list li::before{content:"✓";position:absolute;left:0;color:var(--primary);font-weight:700}
 
 /* Sources */
 .sources{font-size:.9rem;color:var(--muted)}
 .sources ol{padding-left:1.2em}
+
+/* Home */
+.home-hero h1{font-size:clamp(2rem,4.8vw,3.2rem)}
+.areas{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:24px}
+.area{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column}
+.area h3{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin:0 0 .2em}
+.area .area-sub{font-size:.85rem;color:var(--muted);margin:0 0 .6em}
+.area .tags{font-size:.85rem;font-weight:600;color:var(--primary);margin:0 0 .7em}
+.area p{color:var(--muted);font-size:.95rem}
+.area .links{margin-top:auto;display:flex;flex-direction:column;gap:6px;padding-top:4px}
+.area .links a{font-weight:600;text-decoration:none}
+.area .links a::after{content:" →"}
+.band{background:var(--soft);border-radius:var(--radius);padding:28px;display:grid;gap:16px;align-items:center}
+.band h2{margin-bottom:.4em}
+.band p:last-child{margin-bottom:0}
+@media(min-width:880px){.band{grid-template-columns:1fr auto;gap:40px}}
+.reasons{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:24px}
+.reason{border-top:3px solid var(--accent);padding-top:14px}
+.reason h3{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4em}
+.reason p{margin:0;color:var(--muted)}
+.team{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:24px 0}
+.member{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.member .doctor-photo{max-width:none;margin-bottom:12px}
+.member dl{margin:0;display:grid;gap:2px}
+.member dt{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.member dd{margin:0;min-width:0}
+.location{display:grid;gap:24px}
+@media(min-width:880px){.location{grid-template-columns:1fr 1.2fr;align-items:start}}
+.map{border-radius:var(--radius);background:linear-gradient(135deg,#dfe9e6,#efe6d8);min-height:280px;display:grid;place-items:center;color:var(--muted);font-size:.9rem;text-align:center;padding:16px}
+.info-list{margin:0 0 20px;display:grid;gap:12px}
+.info-list dt{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.info-list dd{margin:0;font-weight:500;min-width:0}
 
 /* Footer */
 .site-footer{background:#16231f;color:#c9d6d2;padding:48px 0 32px;font-size:.9rem}
 .site-footer h4{color:#fff;font-family:var(--serif);font-weight:500;font-size:1.1rem;margin:0 0 10px}
 .site-footer a{color:#c9d6d2}
 .footer-grid{display:grid;gap:28px}
-@media(min-width:700px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr}}
+@media(min-width:700px){.footer-grid{grid-template-columns:1.3fr 1fr 1fr}}
 .legal dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
 .legal dt{color:#8fa39e}
 .legal dd{margin:0;min-width:0}
@@ -226,7 +255,10 @@ p{margin:0 0 1em}
 
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="#">Algarve<span>stetic</span></a>
+    <a class="logo" href="index.html">Algarv<span>Estetic</span></a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="index.html#areas">Áreas</a><a href="index.html#international">International patients</a><a href="index.html#equipa">Equipa</a><a href="index.html#contactos">Contactos</a>
+    </nav>
     <div class="header-right">
       <span class="lang"><b>PT</b> · EN</span>
       <a class="btn btn-primary header-cta" href="#avaliar" data-cta="header_marcar">Marcar avaliação</a>
@@ -236,118 +268,91 @@ p{margin:0 0 1em}
 
 <main>
   <div class="container">
-    <nav class="breadcrumbs" aria-label="breadcrumb">
-      <a href="#">Home</a> › <a href="#">Especialidades</a> › Laser CO₂ Fracionado
-    </nav>
+    <nav class="breadcrumbs" aria-label="breadcrumb"><a href="index.html">Home</a> › Correção das Pálpebras</nav>
   </div>
 
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">Laser CO₂ Fracionado</div>
-        <h1>Cicatrizes de acne, textura irregular, poros mais visíveis ou linhas finas?</h1>
-        <p class="lead">O Laser CO₂ Fracionado cria microzonas controladas de tratamento, promovendo renovação da pele e remodelação do colagénio.</p>
+        <h1 class="seo-h1">Correção das Pálpebras (Blefaroplastia) no Algarve</h1>
+        
+        <p class="hook">O olhar parece pesado ou cansado?</p>
+        <p class="lead">Excesso de pele e alterações dos tecidos das pálpebras podem modificar o olhar e, em alguns casos, provocar sensação de peso.</p>
+        <p class="lead">A cirurgia permite corrigir alterações selecionadas preservando as características naturais do rosto.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#avaliar" data-cta="hero_avaliar">Avaliar a minha pele</a>
+          <a class="btn btn-primary" href="#avaliar" data-cta="hero_avaliar">Marcar avaliação</a>
           <a class="btn btn-wa" href="#" data-cta="hero_whatsapp" data-wa>WhatsApp</a>
         </div>
-        <div class="microcopy">Avaliação médica antes do procedimento.</div>
+        <div class="microcopy">Avaliação médica antes de qualquer decisão cirúrgica.</div>
       </div>
-      <div class="visual" role="img" aria-label="Espaço para imagem do procedimento">
-        <div class="visual-label"><b>Imagem:</b> médico a realizar o procedimento, equipamento CO₂ em plano profissional, ou textura da pele em grande plano (com consentimento). <b>Não</b> usar modelo genérico de beleza.</div>
+      <div class="visual" role="img" aria-label="Espaço para imagem">
+        <div class="visual-label"><b>Imagem:</b> médico em consulta a avaliar a região ocular, ou ambiente cirúrgico real da clínica. Sem fotografias «antes/depois» sem consentimento escrito.</div>
       </div>
     </div>
   </section>
 
-  <!-- PARA QUE SERVE? -->
-  <section class="section alt" id="para-que-serve">
+  <!-- INDICAÇÕES -->
+  <section class="section alt" id="indicacoes">
     <div class="container">
-      <h2>Para que serve?</h2>
-      <p class="lead">Pode ser considerado para melhorar:</p>
-      <div class="cards">
-        <div class="card"><div class="card-icon">1</div><p>Determinadas cicatrizes de acne</p></div>
-        <div class="card"><div class="card-icon">2</div><p>Textura irregular</p></div>
-        <div class="card"><div class="card-icon">3</div><p>Poros mais visíveis</p></div>
-        <div class="card"><div class="card-icon">4</div><p>Linhas finas</p></div>
-        <div class="card"><div class="card-icon">5</div><p>Determinadas outras cicatrizes</p></div>
+      <h2>Pode ser considerada para:</h2>
+      <ul class="chips"><li>Excesso de pele</li><li>Determinadas bolsas palpebrais</li><li>Alterações do contorno</li><li>Sensação de peso</li></ul>
+      
+    </div>
+  </section>
+
+  <!-- VISIBLE -->
+  <section class="section" id="informacao">
+    <div class="container">
+      <div class="qa">
+        <div class="qa-row" id="como-funciona">
+          <h2>Como funciona?</h2>
+          <div class="answer">
+            <p>A técnica é definida de acordo com a anatomia e pode envolver remoção cuidadosamente planeada de excesso de pele e tratamento de outros tecidos quando indicado.</p>
+          </div>
+        </div>
+        <div class="qa-row" id="doi">
+          <h2>Dói?</h2>
+          <div class="answer">
+            <p>É realizada anestesia adequada ao procedimento. Em casos selecionados pode ser utilizada anestesia local.</p>
+          </div>
+        </div>
+        <div class="qa-row" id="recuperacao">
+          <h2>Recuperação</h2>
+          <div class="answer">
+            <p>Edema e hematomas são esperados e diminuem progressivamente.</p>
+          </div>
+        </div>
+        <div class="qa-row" id="cicatriz">
+          <h2>E a cicatriz?</h2>
+          <div class="answer">
+            <p>Existe uma cicatriz cirúrgica. Na pálpebra superior, a incisão é habitualmente planeada em relação com a prega natural.</p>
+          </div>
+        </div>
+      </div>
+      <div class="keys"><div class="callout info"><p>O objetivo não é mudar o seu rosto, mas corrigir a alteração identificada.</p></div></div>
+      <div class="mid-cta"><a class="btn btn-primary" href="#avaliar" data-cta="mid_avaliar">Marcar avaliação</a></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section alt" id="faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details><summary>Quando posso trabalhar?</summary><div class="faq-a"><p><span class="placeholder-data">[ПОТРІБНІ ДАНІ — resposta a confirmar pelo médico]</span></p></div></details>
+        <details><summary>Quando posso usar maquilhagem?</summary><div class="faq-a"><p><span class="placeholder-data">[ПОТРІБНІ ДАНІ — resposta a confirmar pelo médico]</span></p></div></details>
+        <details><summary>Quanto tempo dura o edema?</summary><div class="faq-a"><p><span class="placeholder-data">[ПОТРІБНІ ДАНІ — resposta a confirmar pelo médico]</span></p></div></details>
+        <details><summary>Trata olheiras?</summary><div class="faq-a"><p>Não trata automaticamente todas as:</p><ul class="answer-list"><li>rugas perioculares</li><li>olheiras</li><li>alterações pigmentares</li><li>alterações da posição das sobrancelhas</li></ul></div></details>
+        <details><summary>O resultado é permanente?</summary><div class="faq-a"><p><span class="placeholder-data">[ПОТРІБНІ ДАНІ — resposta a confirmar pelo médico]</span></p></div></details>
+        <details><summary>Quais são os riscos?</summary><div class="faq-a"><p>Entre as possíveis complicações encontram-se sangramento, infeção, assimetria, cicatrização desfavorável, alterações da posição palpebral, olho seco e outras complicações menos frequentes.</p></div></details>
       </div>
     </div>
   </section>
 
-  <!-- PERGUNTAS -->
-  <section class="section" id="perguntas">
-    <div class="container qa">
-
-      <div class="qa-row" id="como-funciona">
-        <h2>Como funciona?</h2>
-        <div class="answer">
-          <p>O laser trata pequenas áreas da pele de forma fracionada, mantendo tecido entre elas que participa na recuperação.</p>
-          <p>A remodelação continua depois do procedimento.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="doi">
-        <h2>Dói?</h2>
-        <div class="answer">
-          <p>Pode provocar calor, ardor ou picadas.</p>
-          <p>Conforme a intensidade e a zona, pode ser utilizada anestesia tópica, infiltrativa e/ou bloqueios anestésicos.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="recuperacao">
-        <h2>Como é a recuperação?</h2>
-        <div class="answer">
-          <p>Podem ocorrer:</p>
-          <ul class="answer-list"><li>vermelhidão</li><li>edema</li><li>ardor</li><li>pequenas crostas</li><li>descamação</li></ul>
-          <p>Existe um período visível de recuperação, cuja duração depende da intensidade do tratamento.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="resultado">
-        <h2>Quando vejo o resultado?</h2>
-        <div class="answer">
-          <p>Primeiro ocorre a recuperação da pele. A remodelação desenvolve-se progressivamente durante as semanas e meses seguintes.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="cicatrizes-desaparecem">
-        <h2>As cicatrizes desaparecem?</h2>
-        <div class="answer">
-          <div class="short-answer">Não podemos prometer isso.</div>
-          <p>O objetivo é melhorar a textura, profundidade e aparência das cicatrizes.</p>
-          <p>Cicatrizes diferentes podem necessitar de tratamentos diferentes.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="sol">
-        <h2>Posso apanhar sol?</h2>
-        <div class="answer">
-          <p>A fotoproteção é fundamental durante a recuperação. Exposição solar inadequada aumenta o risco de alterações da pigmentação.</p>
-        </div>
-      </div>
-
-      <div class="qa-row" id="o-que-deve-saber">
-        <h2>O que deve saber</h2>
-        <div class="answer">
-          <ol class="know"><li><span class="num">01</span>Existe downtime.</li><li><span class="num">02</span>O resultado é progressivo.</li><li><span class="num">03</span>Mais intensidade não significa automaticamente melhor resultado.</li></ol>
-        </div>
-      </div>
-
-      <div class="qa-row" id="riscos">
-        <h2>Existem riscos?</h2>
-        <div class="answer">
-          <p>Podem ocorrer alterações da pigmentação, vermelhidão prolongada, infeção, alterações da textura ou cicatrização desfavorável.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- QUEM REALIZA -->
   <section class="section alt" id="medico">
     <div class="container">
-      <h2>Avaliação e procedimento</h2>
+      <h2>Quem realiza a avaliação</h2>
       <div class="doctor">
         <div class="doctor-photo">Foto real do médico</div>
         <dl>
@@ -359,15 +364,14 @@ p{margin:0 0 1em}
     </div>
   </section>
 
-  <!-- PREÇO -->
   <section class="section" id="preco">
     <div class="container" style="max-width:780px">
       <h2>Preço</h2>
       <div class="price-box">
         <span class="status">Não publicar até decisão da administração</span>
-        <p><strong>Laser CO₂ Fracionado — desde €<span class="placeholder-data">___</span></strong></p>
-        <p class="muted">O valor depende da área e extensão do tratamento e é definido após avaliação.</p>
-        <p style="margin:0;font-size:.9rem">A definir: preço da avaliação · preço mínimo real · zonas incluídas · o que está incluído · o que pode ter custo adicional.</p>
+        <p><strong>Correção das Pálpebras — desde €<span class="placeholder-data">___</span></strong></p>
+        <p class="muted">O valor é definido após avaliação, de acordo com o caso.</p>
+        <p style="margin:0;font-size:.9rem">A definir: preço da avaliação · preço mínimo real · o que está incluído · o que pode ter custo adicional.</p>
       </div>
     </div>
   </section>
@@ -376,24 +380,20 @@ p{margin:0 0 1em}
   <section class="section cta-band" id="avaliar">
     <div class="container cta-grid">
       <div>
-        <h2>Será adequado para a minha pele?</h2>
-        <p>Primeiro identificamos a alteração e avaliamos o tipo de pele. Depois definimos se CO₂ é a opção adequada.</p>
-        <div class="btn-row">
-          <a class="btn btn-wa" href="#" data-cta="cta_whatsapp" data-wa>WhatsApp</a>
-        </div>
+        <h2>Será adequado para mim?</h2>
+        <p>Primeiro avaliamos pele, gordura, posição das pálpebras e sobrancelhas e anatomia da região ocular.</p>
+        <div class="btn-row"><a class="btn btn-wa" href="#" data-cta="cta_whatsapp" data-wa>WhatsApp</a></div>
       </div>
       <div class="form-card" id="lead-card">
         <form id="lead-form" novalidate>
-          <h3>Avaliar a minha pele</h3>
+          <h3>Marcar avaliação</h3>
           <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
           <div class="field"><label for="f-contacto">Telefone ou email</label><input id="f-contacto" name="contacto" autocomplete="tel" required></div>
           <div class="field"><label for="f-zona">O que gostaria de avaliar?</label>
-            <select id="f-zona" name="zona">
-              <option>Cicatrizes de acne</option><option>Textura irregular</option><option>Poros visíveis</option><option>Linhas finas</option><option>Outras cicatrizes</option><option>Não tenho a certeza</option>
-            </select>
+            <select id="f-zona" name="zona"><option>Excesso de pele</option><option>Bolsas palpebrais</option><option>Sensação de peso</option><option>Não tenho a certeza</option></select>
           </div>
           <input type="hidden" name="lead_id" id="f-lead">
-          <input type="hidden" name="page" value="laser-co2">
+          <input type="hidden" name="page" value="blefaroplastia-algarve">
           <p class="consent-line">Ao enviar, aceita ser contactado para organizar a avaliação. Ver <a href="#">Política de Privacidade</a>.</p>
           <button class="btn btn-primary" type="submit" style="width:100%">Enviar pedido</button>
         </form>
@@ -406,7 +406,6 @@ p{margin:0 0 1em}
     </div>
   </section>
 
-  <!-- INTERNATIONAL PATIENTS (só na página PT) -->
   <section class="section" id="international" lang="en">
     <div class="container">
       <div class="intl">
@@ -415,20 +414,19 @@ p{margin:0 0 1em}
           <h2>Visiting the Algarve?</h2>
           <p>If you are travelling to the Algarve and would like to plan an assessment or treatment during your stay, visit our International Patients page.</p>
           <a class="btn btn-outline" href="#" data-cta="intl_plan">Plan your visit</a>
-          <p class="lang-note" style="margin-top:14px">Block shown only on the PT page. Leads to the international pathway (timing, recovery, follow-up).</p>
+          <p class="lang-note" style="margin-top:14px">Leads to the international pathway (timing, recovery, follow-up).</p>
         </div>
         <form class="form-card" style="box-shadow:none;border:1px solid var(--line)" onsubmit="return false">
           <p class="muted" style="font-size:.85rem;margin-bottom:12px">Preview of the qualification form on the International Patients page:</p>
           <div class="field"><label>Where do you live?</label><input placeholder="Country / city"></div>
           <div class="field"><label>When will you be in the Algarve?</label><input type="date"></div>
           <div class="field"><label>How long will you stay?</label><select><option>Less than 1 week</option><option>1–2 weeks</option><option>More than 2 weeks</option></select></div>
-          <div class="field"><label>What would you like assessed?</label><input placeholder="e.g. acne scars"></div>
+          <div class="field"><label>What would you like assessed?</label><input placeholder="Briefly"></div>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- INFORMAÇÃO CLÍNICA E FONTES -->
   <section class="section alt" id="fontes">
     <div class="container sources" style="max-width:820px">
       <h2 style="color:var(--ink)">Informação clínica e fontes</h2>
@@ -443,14 +441,13 @@ p{margin:0 0 1em}
   </section>
 </main>
 
-<!-- LEGAL / ERS -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="legal">
-        <h4>Algarvestetic</h4>
+        <h4>Centro Médico AlgarvEstetic</h4>
         <dl>
-          <dt>Entidade</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
+          <dt>Entidade</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ — entidade responsável]</span></dd>
           <dt>Morada</dt><dd>Portimão, Algarve · <span class="placeholder-data">[morada completa]</span></dd>
           <dt>Inscrição ERS</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
           <dt>Registo</dt><dd><span class="placeholder-data">[ПОТРІБНІ ДАНІ]</span></dd>
@@ -459,14 +456,15 @@ p{margin:0 0 1em}
       </div>
       <div>
         <h4>Contactos</h4>
-        <p><span class="placeholder-data">[telefone]</span><br><span class="placeholder-data">[email]</span><br>WhatsApp · Horário</p>
+        <p><span class="placeholder-data">[telefone]</span><br><span class="placeholder-data">[email]</span><br>WhatsApp</p>
+        <p>Segunda a sexta-feira<br>09:00–18:00</p>
       </div>
       <div>
         <h4>Informação</h4>
-        <p><a href="#">Política de Privacidade</a><br><a href="#" id="manage-cookies">Gestão de cookies</a><br><a href="#">International Patients</a></p>
+        <p><a href="#">Política de Privacidade</a><br><a href="#">Política de Cookies</a><br><a href="#" id="manage-cookies">Gerir cookies</a><br><a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a><br><a href="index.html#international">International Patients</a></p>
       </div>
     </div>
-    <div class="footer-bottom">Os números de registo são preenchidos apenas com os dados oficiais da clínica.</div>
+    <div class="footer-bottom">Os números de registo são preenchidos apenas com os dados oficiais da clínica. Outros elementos legalmente obrigatórios devem ser confirmados antes da publicação.</div>
   </div>
 </footer>
 
@@ -485,7 +483,7 @@ p{margin:0 0 1em}
   </div>
 </div>
 
-<script>window.PAGE = {"slug":"laser-co2","leadPrefix":"co2","whatsappText":"Olá, gostaria de avaliar se o Laser CO₂ Fracionado é indicado para a minha pele."};</script>
+<script>window.PAGE = {"slug":"blefaroplastia-algarve","leadPrefix":"palp","whatsappText":"Olá, gostaria de marcar uma avaliação para correção das pálpebras."};</script>
 <script>
 (() => {
   const P = window.PAGE;
@@ -527,7 +525,7 @@ p{margin:0 0 1em}
     e.preventDefault();
     const f = e.target;
     if (!f.nome.value.trim() || !f.contacto.value.trim()) { f.reportValidity(); return; }
-    track('generate_lead', { page: P.slug, zona: f.zona.value, lead_id: leadId });
+    track('generate_lead', { page: P.slug, zona: f.zona ? f.zona.value : undefined, lead_id: leadId });
     document.getElementById('lead-card').classList.add('sent');
   });
 })();

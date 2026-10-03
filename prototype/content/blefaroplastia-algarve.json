@@ -1,0 +1,54 @@
+{
+  "slug": "blefaroplastia-algarve",
+  "leadPrefix": "palp",
+  "name": "Correção das Pálpebras",
+  "title": "Blefaroplastia Algarve | Correção das Pálpebras",
+  "description": "Correção das pálpebras (blefaroplastia) no Algarve: avaliação do excesso de pele, bolsas palpebrais e sensação de peso. Abordagem individual de acordo com a anatomia.",
+  "h1": "Correção das Pálpebras (Blefaroplastia) no Algarve",
+  "hook": "O olhar parece pesado ou cansado?",
+  "heroText": [
+    "Excesso de pele e alterações dos tecidos das pálpebras podem modificar o olhar e, em alguns casos, provocar sensação de peso.",
+    "A cirurgia permite corrigir alterações selecionadas preservando as características naturais do rosto."
+  ],
+  "ctaLabel": "Marcar avaliação",
+  "microcopy": "Avaliação médica antes de qualquer decisão cirúrgica.",
+  "imageNote": "médico em consulta a avaliar a região ocular, ou ambiente cirúrgico real da clínica. Sem fotografias «antes/depois» sem consentimento escrito.",
+  "chips": {
+    "label": "Pode ser considerada para:",
+    "items": ["Excesso de pele", "Determinadas bolsas palpebrais", "Alterações do contorno", "Sensação de peso"]
+  },
+  "blocks": [
+    { "id": "como-funciona", "h": "Como funciona?", "answer": [
+      { "p": "A técnica é definida de acordo com a anatomia e pode envolver remoção cuidadosamente planeada de excesso de pele e tratamento de outros tecidos quando indicado." }
+    ] },
+    { "id": "doi", "h": "Dói?", "answer": [
+      { "p": "É realizada anestesia adequada ao procedimento. Em casos selecionados pode ser utilizada anestesia local." }
+    ] },
+    { "id": "recuperacao", "h": "Recuperação", "answer": [
+      { "p": "Edema e hematomas são esperados e diminuem progressivamente." }
+    ] },
+    { "id": "cicatriz", "h": "E a cicatriz?", "answer": [
+      { "p": "Existe uma cicatriz cirúrgica. Na pálpebra superior, a incisão é habitualmente planeada em relação com a prega natural." }
+    ] }
+  ],
+  "keys": ["O objetivo não é mudar o seu rosto, mas corrigir a alteração identificada."],
+  "faq": [
+    { "q": "Quando posso trabalhar?" },
+    { "q": "Quando posso usar maquilhagem?" },
+    { "q": "Quanto tempo dura o edema?" },
+    { "q": "Trata olheiras?", "a": [
+      { "p": "Não trata automaticamente todas as:" },
+      { "list": ["rugas perioculares", "olheiras", "alterações pigmentares", "alterações da posição das sobrancelhas"] }
+    ] },
+    { "q": "O resultado é permanente?" },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Entre as possíveis complicações encontram-se sangramento, infeção, assimetria, cicatrização desfavorável, alterações da posição palpebral, olho seco e outras complicações menos frequentes." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Será adequado para mim?",
+    "text": ["Primeiro avaliamos pele, gordura, posição das pálpebras e sobrancelhas e anatomia da região ocular."]
+  },
+  "formOptions": ["Excesso de pele", "Bolsas palpebrais", "Sensação de peso"],
+  "whatsappText": "Olá, gostaria de marcar uma avaliação para correção das pálpebras."
+}

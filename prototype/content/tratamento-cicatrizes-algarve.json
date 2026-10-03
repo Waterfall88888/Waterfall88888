@@ -1,0 +1,59 @@
+{
+  "slug": "tratamento-cicatrizes-algarve",
+  "leadPrefix": "cic",
+  "name": "Tratamento de Cicatrizes",
+  "title": "Tratamento de Cicatrizes Algarve | Acne, Cirurgia e Trauma",
+  "description": "Tratamento de cicatrizes no Algarve: acne, cirúrgicas, traumáticas, hipertróficas e queloides. Primeiro classificamos a cicatriz, depois escolhemos a abordagem.",
+  "h1": "Tratamento de Cicatrizes no Algarve",
+  "hook": "A cicatriz ficou funda, elevada, irregular ou continua a incomodar?",
+  "heroText": [
+    "Cicatrizes podem ser deprimidas, elevadas, espessas, aderentes ou apresentar alterações de cor.",
+    "Cicatrizes diferentes precisam de abordagens diferentes."
+  ],
+  "ctaLabel": "Avaliar a minha cicatriz",
+  "microcopy": "Avaliação médica antes de escolher a técnica.",
+  "imageNote": "médico a observar uma cicatriz em consulta, ou textura de pele em grande plano (com consentimento). Não usar modelo genérico.",
+  "chips": {
+    "label": "Avaliamos:",
+    "items": ["Cicatrizes de acne", "Cirúrgicas", "Traumáticas", "Hipertróficas", "Queloides"]
+  },
+  "blocks": [
+    { "id": "tratamentos", "h": "Como podem ser tratadas?", "answer": [
+      { "p": "Dependendo da cicatriz, podem ser consideradas diferentes técnicas, incluindo Laser CO₂, radiofrequência microagulhada, microneedling, tratamentos injetáveis ou correção cirúrgica, isoladamente ou em combinação." }
+    ] },
+    { "id": "desaparece", "h": "A cicatriz desaparece?", "answer": [
+      { "short": "Não podemos prometer isso." },
+      { "p": "O objetivo é melhorar características como profundidade, relevo, textura, espessura ou aderência." }
+    ] },
+    { "id": "antigas", "h": "Cicatrizes antigas?", "answer": [
+      { "p": "Também podem ser avaliadas. A idade da cicatriz é apenas um dos fatores considerados." }
+    ] }
+  ],
+  "keys": ["Primeiro classificamos a cicatriz. Depois escolhemos a abordagem."],
+  "faq": [
+    { "q": "Dói?", "a": [
+      { "p": "Depende da técnica. Podem ser utilizadas anestesia tópica, infiltrativa ou bloqueios locais." }
+    ] },
+    { "q": "Quantas sessões?", "a": [
+      { "p": "Depende do tipo e extensão da cicatriz, técnica utilizada e resposta." }
+    ] },
+    { "q": "Qual o tempo de recuperação?", "a": [
+      { "p": "Depende do tratamento. Pode existir vermelhidão, edema, sensibilidade, crostas, descamação ou alterações temporárias da pigmentação." }
+    ] },
+    { "q": "CO₂ é melhor?", "a": [
+      { "p": "Não existe um tratamento universal. Mais agressivo não significa necessariamente melhor." }
+    ] },
+    { "q": "Queloide pode voltar?", "a": [
+      { "p": "Queloides têm risco de recorrência e exigem abordagem própria." }
+    ] },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Dependem da técnica e podem incluir alterações da pigmentação, infeção, alterações da textura, cicatrização desfavorável ou recorrência." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Qual tratamento preciso?",
+    "text": ["Não precisa de escolher a tecnologia.", "Primeiro classificamos a cicatriz. Depois construímos o plano."]
+  },
+  "formOptions": ["Cicatriz de acne", "Cicatriz cirúrgica", "Cicatriz traumática", "Cicatriz elevada ou queloide"],
+  "whatsappText": "Olá, gostaria de avaliar uma cicatriz."
+}

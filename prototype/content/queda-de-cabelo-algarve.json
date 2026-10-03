@@ -1,0 +1,57 @@
+{
+  "slug": "queda-de-cabelo-algarve",
+  "leadPrefix": "cap",
+  "name": "Tratamento Capilar",
+  "priceItem": "Tratamento capilar (PRP/PRF)",
+  "title": "Queda de Cabelo Algarve | PRP e PRF Capilar",
+  "description": "Queda de cabelo ou menor densidade? Avaliação do padrão da queda no Algarve e tratamento capilar com PRP ou PRF quando existe indicação.",
+  "h1": "Queda de Cabelo — Avaliação e Tratamento no Algarve",
+  "hook": "Está a perder cabelo ou a notar menor densidade?",
+  "heroText": [
+    "Queda aumentada, risca mais larga, entradas, coroa mais visível ou fios mais finos podem ter causas diferentes.",
+    "Primeiro avaliamos o padrão da queda. Depois definimos se existe indicação para tratamento."
+  ],
+  "ctaLabel": "Avaliar a minha queda de cabelo",
+  "microcopy": "Avaliação médica antes de qualquer tratamento.",
+  "imageNote": "avaliação do couro cabeludo em consulta (tricoscopia/observação), ou preparação do PRP em ambiente clínico. Não usar modelo genérico.",
+  "blocks": [
+    { "id": "prp", "h": "O que é PRP?", "answer": [
+      { "p": "É preparado a partir do próprio sangue e aplicado no couro cabeludo através de pequenas injeções. Pode ser utilizado em determinados tipos de perda capilar." }
+    ] },
+    { "id": "prf", "h": "E PRF?", "answer": [
+      { "p": "Também é obtido do próprio sangue, através de um processamento diferente." },
+      { "p": "O PRF não deve ser visto como simplesmente superior ao PRP." }
+    ] },
+    { "id": "doi", "h": "Dói?", "answer": [
+      { "p": "As pequenas injeções podem causar desconforto." }
+    ] },
+    { "id": "recuperacao", "h": "Recuperação", "answer": [
+      { "p": "Pode existir vermelhidão, sensibilidade ou ligeiro edema. Habitualmente, a recuperação é curta." }
+    ] },
+    { "id": "resultado", "h": "Quando vejo resultado?", "answer": [
+      { "p": "O ciclo capilar é lento. A evolução é avaliada ao longo dos meses." }
+    ] }
+  ],
+  "keys": ["PRP/PRF não criam novos folículos e não tratam todas as causas de queda de cabelo."],
+  "faq": [
+    { "q": "Quantas sessões?", "a": [
+      { "p": "Não existe um número universal. O plano depende do diagnóstico, protocolo e resposta." }
+    ] },
+    { "q": "Preciso de manutenção?" },
+    { "q": "PRP ou PRF?", "a": [
+      { "p": "Primeiro avaliamos porque está a perder densidade. Depois definimos se PRP, PRF ou outra abordagem é adequada." },
+      { "p": "A evidência clínica sobre o PRF é atualmente mais limitada." }
+    ] },
+    { "q": "PRP substitui minoxidil?" },
+    { "q": "Quando lavo o cabelo?" },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Podem ocorrer dor, hematomas, edema, sangramento pontual, reação vasovagal ou, menos frequentemente, infeção." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Por onde começar?",
+    "text": ["Primeiro avaliamos porque está a perder densidade. Depois definimos se PRP, PRF ou outra abordagem é adequada."]
+  },
+  "formOptions": ["Queda aumentada", "Menor densidade", "Fios mais finos", "Entradas ou coroa"],
+  "whatsappText": "Olá, gostaria de avaliar a minha queda de cabelo."
+}

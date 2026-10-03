@@ -1,0 +1,66 @@
+{
+  "slug": "doencas-da-pele-portimao",
+  "leadPrefix": "pele",
+  "name": "Doenças da Pele",
+  "priceItem": "Consulta",
+  "bookingNoun": "consulta",
+  "title": "Doenças da Pele Portimão | Dermatoscopia, Acne e Biópsias",
+  "description": "Avaliação de sinais, lesões e alterações da pele em Portimão: dermatoscopia, biópsia e estudo histopatológico, acne, verrugas e manchas.",
+  "h1": "Avaliação de Doenças e Alterações da Pele em Portimão",
+  "hook": "Uma lesão nova, um sinal que mudou, acne ou uma alteração da pele que não desaparece?",
+  "heroText": [
+    "Nem todas as alterações da pele são estéticas.",
+    "O primeiro passo é perceber o que é, se precisa de investigação e se deve ser acompanhada, tratada ou removida."
+  ],
+  "ctaLabel": "Marcar consulta",
+  "microcopy": "Diagnóstico antes de qualquer tratamento ou remoção.",
+  "imageNote": "dermatoscopia a ser realizada em consulta, ou médico a observar uma lesão. Sem imagens chocantes de lesões.",
+  "blocks": [
+    { "id": "sinais", "h": "Sinais e lesões da pele", "answer": [
+      { "p": "Alterações de tamanho, forma, cor, crescimento, sangramento ou uma ferida que não cicatriza merecem avaliação." }
+    ] },
+    { "id": "dermatoscopia", "h": "Dermatoscopia", "answer": [
+      { "p": "Permite observar estruturas da pele com ampliação e iluminação específicas e pode ajudar a decidir se uma lesão deve ser acompanhada ou investigada." }
+    ] },
+    { "id": "biopsia", "h": "Biópsia e estudo histopatológico", "answer": [
+      { "p": "Quando necessário, pode ser colhida uma amostra ou removida uma lesão para análise microscópica." }
+    ] },
+    { "id": "verrugas", "h": "Verrugas e papilomas", "answer": [
+      { "p": "Antes da remoção, avaliamos que tipo de lesão existe e se é necessário estudo histopatológico." }
+    ] },
+    { "id": "acne", "h": "Acne", "answer": [
+      { "p": "Avaliamos comedões, oleosidade, lesões inflamatórias, nódulos, manchas pós-inflamatórias e risco de cicatrizes." }
+    ] },
+    { "id": "manchas", "h": "Manchas e fotoenvelhecimento", "answer": [
+      { "p": "Nem toda mancha castanha é apenas uma «mancha do sol». Primeiro identificamos a alteração. Depois decidimos se e como tratar." }
+    ] }
+  ],
+  "keys": [],
+  "faq": [
+    { "q": "Quando um sinal deve ser avaliado?", "a": [
+      { "p": "Uma lesão que cresce, muda de forma ou cor, sangra, forma crosta ou não cicatriza merece avaliação." },
+      { "p": "Nem toda mudança significa doença grave, mas não deve ser ignorada." }
+    ] },
+    { "q": "Dermatoscopia dói?" },
+    { "q": "Quando é necessária biópsia?", "a": [
+      { "p": "Quando a observação clínica não é suficiente, pode ser necessário colher uma amostra ou remover a lesão." }
+    ] },
+    { "q": "A lesão removida vai para histologia?", "a": [
+      { "p": "Conforme as características da lesão, pode ser indicado remover e/ou enviar para estudo histopatológico, que pode confirmar ou estabelecer o diagnóstico." }
+    ] },
+    { "q": "Como tratar acne?", "a": [
+      { "p": "O objetivo é controlar a doença e reduzir novas lesões e o risco de marcas e cicatrizes." }
+    ] },
+    { "q": "Posso remover um sinal por estética?", "a": [
+      { "short": "Nem sempre." },
+      { "p": "Conforme as características da lesão, pode ser indicado acompanhar, realizar dermatoscopia, biopsar, remover e/ou enviar para estudo histopatológico." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Por onde começar?",
+    "text": ["Não precisa de saber o nome da alteração.", "Mostre-nos o que mudou ou o que o preocupa."]
+  },
+  "formLabel": "O que gostaria de avaliar?",
+  "formOptions": ["Sinal ou lesão que mudou", "Lesão nova", "Acne", "Manchas", "Verrugas ou papilomas", "Outra alteração da pele"],
+  "whatsappText": "Olá, gostaria de marcar uma consulta para avaliar uma alteração da pele."
+}

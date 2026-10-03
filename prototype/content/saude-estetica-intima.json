@@ -1,0 +1,63 @@
+{
+  "slug": "saude-estetica-intima",
+  "leadPrefix": "intima",
+  "name": "Saúde e Estética da Zona Íntima",
+  "title": "Saúde e Estética Íntima | AlgarvEstetic Algarve",
+  "description": "Avaliação confidencial de alterações funcionais ou estéticas da zona íntima no Algarve. Abordagens médicas, injetáveis ou cirúrgicas, quando indicadas.",
+  "h1": "Saúde e Estética da Zona Íntima",
+  "hook": "Alterações íntimas que provocam desconforto ou a incomodam esteticamente?",
+  "heroText": [
+    "Idade, menopausa, gravidez, parto e características individuais podem estar associados a alterações funcionais ou estéticas da zona íntima."
+  ],
+  "ctaLabel": "Marcar avaliação confidencial",
+  "microcopy": "Avaliação com privacidade e confidencialidade.",
+  "imageNote": "ambiente de consulta calmo e discreto, ou detalhe neutro da clínica. Sem imagens anatómicas nem corpos.",
+  "sensitive": true,
+  "chips": {
+    "label": "Podemos avaliar:",
+    "items": ["Alterações dos tecidos externos", "Volume dos grandes lábios", "Pequenos lábios", "Alterações após parto", "Secura ou desconforto", "Preocupações estéticas"]
+  },
+  "blocks": [
+    { "id": "tratamento-unico", "h": "Existe um único tratamento?", "answer": [
+      { "short": "Não." },
+      { "p": "Dependendo da situação, podem ser consideradas diferentes abordagens médicas, injetáveis ou cirúrgicas." }
+    ] },
+    { "id": "acido-hialuronico", "h": "Ácido hialurónico", "answer": [
+      { "p": "Em casos selecionados, pode ser utilizado nos tecidos externos, após avaliação." }
+    ] },
+    { "id": "pequenos-labios", "h": "Pequenos lábios", "answer": [
+      { "p": "Quando existe desconforto ou preocupação relacionada com tamanho, forma ou assimetria, pode ser realizada avaliação cirúrgica." },
+      { "p": "Existe uma ampla variação anatómica normal." }
+    ] },
+    { "id": "recuperacao", "h": "Recuperação", "answer": [
+      { "p": "Depende do procedimento e pode incluir edema, sensibilidade, hematomas e restrição temporária de exercício ou atividade sexual." }
+    ] }
+  ],
+  "keys": [],
+  "faq": [
+    { "q": "Dói?", "a": [
+      { "p": "Depende do procedimento. Podem ser utilizadas anestesia tópica, infiltrativa, bloqueios ou outra estratégia adequada." }
+    ] },
+    { "q": "Quando posso ter relações?" },
+    { "q": "Quanto dura o resultado?" },
+    { "q": "Que anestesia é utilizada?", "a": [
+      { "p": "Depende do procedimento. Podem ser utilizadas anestesia tópica, infiltrativa, bloqueios ou outra estratégia adequada." }
+    ] },
+    { "q": "Ácido hialurónico é indicado para mim?", "a": [
+      { "p": "Em casos selecionados, podem ser considerados procedimentos com ácido hialurónico nos tecidos externos, após avaliação." },
+      { "p": "Não é adequado para todas as alterações íntimas." }
+    ] },
+    { "q": "Quais são os riscos?", "a": [
+      { "p": "Dependem da intervenção e podem incluir dor, edema, sangramento, infeção, alterações da sensibilidade, assimetria ou cicatrização desfavorável." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Por onde começar?",
+    "text": [
+      "Não precisa de escolher previamente laser, injetável ou cirurgia.",
+      "Diga-nos o que a incomoda. Primeiro avaliamos; depois discutimos as opções."
+    ]
+  },
+  "formOptions": [],
+  "whatsappText": "Olá, gostaria de marcar uma avaliação confidencial."
+}

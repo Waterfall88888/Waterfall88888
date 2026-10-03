@@ -1,0 +1,69 @@
+{
+  "slug": "avaliacao-proctologica-portimao",
+  "leadPrefix": "procto",
+  "name": "Avaliação Proctológica",
+  "priceItem": "Consulta de Cirurgia Geral",
+  "bookingNoun": "consulta",
+  "title": "Proctologia Portimão | Hemorroidas, Fissuras e Avaliação",
+  "description": "Avaliação proctológica em Portimão (Consulta de Cirurgia Geral): sangramento, dor, comichão, hemorroidas, fissura anal, fístula e doença pilonidal.",
+  "h1": "Avaliação Proctológica em Portimão",
+  "h1Sub": "Consulta de Cirurgia Geral",
+  "hook": "Dor, sangramento, comichão ou desconforto anal?",
+  "heroText": [
+    "Muitas pessoas adiam a consulta por vergonha ou receio do exame.",
+    "Nem todo sangramento é provocado por hemorróidas e nem toda dor anal tem a mesma causa."
+  ],
+  "ctaLabel": "Marcar consulta de Cirurgia Geral",
+  "microcopy": "Consulta com privacidade e explicação de cada passo.",
+  "imageNote": "consultório médico calmo e discreto, ou médico em conversa com o paciente. Sem imagens anatómicas.",
+  "sensitive": true,
+  "chips": {
+    "label": "O que avaliamos?",
+    "items": ["Sangramento", "Dor", "Nódulo", "Comichão", "Prolapso", "Secreção", "Outras alterações da região anal"],
+    "note": "Podem ser identificadas situações como doença hemorroidária, fissura anal, fístula, doença pilonidal ou outras alterações que necessitem de investigação."
+  },
+  "blocks": [
+    { "id": "consulta", "h": "Como é a consulta?", "answer": [
+      { "p": "Começa pela avaliação dos sintomas e antecedentes. Quando indicado, realiza-se exame da região e pode ser necessária anuscopia." }
+    ] },
+    { "id": "exame-doi", "h": "O exame dói?", "answer": [
+      { "p": "Pode existir desconforto, sobretudo quando já existe dor ou inflamação. O exame é adaptado à situação clínica." }
+    ] },
+    { "id": "procedimento", "h": "Se forem hemorróidas, vou precisar de procedimento?", "answer": [
+      { "short": "Não necessariamente." },
+      { "p": "Alguns casos podem ser tratados de forma conservadora; outros necessitam de procedimento." }
+    ] },
+    { "id": "laser", "h": "E o laser?", "answer": [
+      { "p": "Pode ser considerado em situações selecionadas. A técnica é escolhida depois do diagnóstico." }
+    ] },
+    { "id": "sangue", "h": "Tenho sangue. São hemorróidas?", "answer": [
+      { "p": "Não deve ser assumido automaticamente. Sangramento persistente ou recorrente deve ser avaliado." }
+    ] }
+  ],
+  "keys": ["Consulta não significa cirurgia. Primeiro identificamos a causa."],
+  "faq": [
+    { "q": "Preciso de anuscopia?", "a": [
+      { "p": "Depende do caso. Quando indicado, realiza-se exame da região e, conforme o caso, anuscopia ou outros exames necessários." }
+    ] },
+    { "q": "Como me preparo?" },
+    { "q": "Tenho vergonha — como decorre o exame?", "a": [
+      { "p": "É uma preocupação comum. A avaliação é realizada com privacidade, respeito e explicação do exame necessário." },
+      { "p": "O exame é adaptado à situação clínica e à tolerância do paciente." }
+    ] },
+    { "q": "Hemorróidas precisam sempre de cirurgia?", "a": [
+      { "short": "Não necessariamente." },
+      { "p": "O tratamento depende dos sintomas, grau da doença, presença de prolapso, sangramento e resposta a tratamentos anteriores. Alguns casos podem ser tratados de forma conservadora; outros podem necessitar de procedimento." }
+    ] },
+    { "q": "Como funciona o tratamento laser?" },
+    { "q": "Quando devo procurar avaliação rapidamente?", "a": [
+      { "p": "Procure avaliação especialmente perante sangramento persistente, dor importante, febre associada a inchaço, secreção purulenta, alteração persistente do trânsito intestinal, perda de peso não intencional ou agravamento dos sintomas." }
+    ] }
+  ],
+  "finalCta": {
+    "title": "Por onde começar?",
+    "text": ["Se tem dor, sangramento, comichão, prolapso, nódulo ou outra alteração anal, comece por perceber a causa."]
+  },
+  "formTitle": "Marcar consulta de Cirurgia Geral",
+  "formOptions": [],
+  "whatsappText": "Olá, gostaria de marcar uma consulta de Cirurgia Geral."
+}
